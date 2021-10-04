@@ -13,7 +13,7 @@
 ***2.1 Actualizacion de los repositorios***
 
 
-***2.2. Instalación de paquetes adicciones***
+***2.2. Instalación de paquetes adicionales***
 
 ***2.3 Instalación de GitLab***
 
