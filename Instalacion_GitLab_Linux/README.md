@@ -28,7 +28,7 @@
 <p>Para la la instalación de GitLab en Linux, tenemos que disponer de una distribución Linux, así como una cuena de superusuario o root.</p>
 
 
-***2. Pasos para realzar la instalación en local***
+***2. Pasos para realizar la instalación en local***
 
 
    ****2.1 Actualización de los repositorios****
