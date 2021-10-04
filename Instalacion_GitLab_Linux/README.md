@@ -10,7 +10,7 @@
 
 **2. Pasos para realizar la instalación en local**
 
-***2.1 Actualizacion de los repositorios***
+***2.1 Actualización de los repositorios***
 
 
 ***2.2. Instalación de paquetes adicionales***
@@ -25,13 +25,13 @@
 
 ***1. Requisitos previos para la instalacion de GitLab en Linux***
 
-<p>Para la la instalacion de GitLab en Linux, tenemos que disponer de una distribución Linux, así como una cuena de superusuario o root.</p>
+<p>Para la la instalación de GitLab en Linux, tenemos que disponer de una distribución Linux, así como una cuena de superusuario o root.</p>
 
 
-***2. Pasos para realzar la instalacion en local***
+***2. Pasos para realzar la instalación en local***
 
 
-   ****2.1 Actualizacion de los repositorios****
+   ****2.1 Actualización de los repositorios****
 
 <p>Actualizamos tanto el sistema operativo como nuestro repositorio, para asegurarnos que la instalacion es segura y actualizada. Los comandos serian los siguientes: </p>
 <img src="https://user-images.githubusercontent.com/73592097/135930178-d99661aa-50dd-41c7-8118-b7fcfb90ebc8.png" alt="actualizacion" width="800px">
