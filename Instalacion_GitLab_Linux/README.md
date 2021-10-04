@@ -45,11 +45,11 @@
 
 <p>Instalamos algunas dependencias necesarias con este comando</p>
 
-<img src="" alt="dependencias" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/135934596-f57bd115-90e4-49c1-96f9-27eb0df9740c.GIF" alt="dependencias" width="800px">
 
 <p> Y luego</p>
 
-<img src="" alt="" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/135934600-83346c48-21c1-42c8-bede-68f3b69b004e.GIF" alt="install gitLab" width="800px">
 
 <p>Finalizamos con un mensaje similar al siguiente </p>
 
