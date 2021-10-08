@@ -21,7 +21,7 @@
 
 **1. Requisitos  previos a la instalación**
 
-<p>Para instalar estos dos servicios web "Apache-Tomcat10", necesitaremos un servidor Ubuntu 20.04 con una cuenta de superusuario **no root**.</p>
+<p>Para instalar estos dos servicios web "Apache-Tomcat10", necesitaremos un servidor Ubuntu 20.04 con una cuenta de superusuario no root.</p>
 <p>Además tener instalador Java, que en el caso de que no lo tengáis, les mostrare como hacerlo, paso a paso.</p>
 <br/>
 
