@@ -40,9 +40,66 @@
 
 **2. Pasos para realizar la instalación**
 
+  ***2.1 Actualización de los repositorios***
+
 <p>Actualizaremos tanto el repositorio como el S.O. para asegurarnos que va hacer una instalación segura y actualizada, el comando seria...</p>
 
 >   sudo apt update && sudo apt upgrade
 
+  ***2.2 Instalación de Apache-Tomcat***
 
-<p></p>
+<p>Procederemos a descargar Tomcat 20 para Ubuntu 20.04 desde la terminal con el siguiente comando...</p>
+
+>   wget https://downloads.apache.org/tomcat/tomcat-10/v10.0.12/bin/apache-tomcat-10.0.12.tar.gz
+
+<p> Creamos el nuevo usuario y grupo Tomcat 10 para configurar el servicio en el sistema. El comando es...</p>
+
+>sudo useradd -U -m -d /opt/tomcat -k /dev/null -s /bin/false tomcat
+
+<p> Luego descomprimimos el paquete directamente en su ubicación </p>
+
+>   sudo tar xf apache-tomcat-10.0.12.tar.gz -C /opt/tomcat/
+
+<p> Asignamos como propietario los archivos Tomcat10 al usuario que hemos creado anteriormente con este comando...</p>
+
+>   sudo chown -R tomcat: /opt/tomcat/
+
+<p>Renombramos el directorio de instalación, creando un enlace simbólico para facilitar la instalación y configuración, el comando seria...</p>
+
+>  sudo ln -s /opt/tomcat/apache-tomcat-10.0.12/ /opt/tomcat/apache-tomcat
+
+<p>Vamos a configurar e iniciar el servicio, creando un archivo en la unidad para systemd, el comando seria.... </p>
+
+> sudo nano /etc/systemd/system/tomcat10.service
+
+
+<p>Y el contenido que debemos copiar es el siguiente.....</p>
+
+<p>Iniciamos el servicio, con el siguiente comando....</p>
+
+>  sudo systemctl start tomcat10
+
+<p>Una vez iniciado el servicio, verificamos el estado del mismo, el comando seria el siguiente...</p>
+
+>systemctl status tomcat10
+
+<p>Ahora habilitamos el siguiente servicio, para que Tomcat 10, inicie automáticamente en cada arranque de Ubuntu, con el siguiente comando...</p>
+
+>sudo systemctl enable tomcat10
+
+  ***2.3 Acceso a Apache-Tomcat***
+
+  <p>Accederemos a Tomcat10 desde un navegador, indicándole la dirección del servidor y su puerto de conexión, que hemos configurado</p>
+
+  <p>Si tenemos problemas de acceso, mira el siguiente apartado</p>
+
+  ****2.3.1 Problema de acceso a Apache-Tomcat****
+
+
+
+<p>Ahora vamos a realizar el cambio de puerto de la aplicación, que se encuentra en el archivo server.xml, el comando seria el siguiente</p>
+<p>Nos encontramos con esta configuración, con el puerto 8080</p>
+<p>Ahora vamos a cambiar el puerto 8080, por 8083</p>
+<p>Una vez cambiado el puerto guardamos el fichero CTRL+O, y salimos de la aplicación CTRL+ X</p>
+<p>Accederemos nuevamente al navegador web y en la url ponemos la dirección del servidor y el puerto, finalmente nos tendría que salir una ventana similar a esta</p>
+<p>Enhorabuena ya tenemos la instalación Apache-Tomcat10</p>
