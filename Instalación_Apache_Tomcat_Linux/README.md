@@ -17,3 +17,32 @@
   * #### 2.3.1 Problemas de acceso a Apache-Tomcat. ####
 
 <hr/>
+<br/>
+
+**1. Requisitos  previos a la instalación**
+
+<p>Para instalar estos dos servicios web "Apache-Tomcat10", necesitaremos un servidor Ubuntu 20.04 con una cuenta de superusuario **no root**.</p>
+<p>Además tener instalador Java, que en el caso de que no lo tengáis, les mostrare como hacerlo, paso a paso.</p>
+<br/>
+
+****1.2 Instalación de Open-JDK en el S.O.****
+<p>Primeramente actualizaremos el sistema con este comando..</p>
+
+> sudo apt-get update
+
+<p>Seguidamente instalaremos Java con este comando...</p>
+
+> sudo apt-get install default-jdk
+
+<p>Posteriormente, comprobaremos que se ha instalado en nuestro sistema, el comando es...</p>
+
+> java --version
+
+**2. Pasos para realizar la instalación**
+
+<p>Actualizaremos tanto el repositorio como el S.O. para asegurarnos que va hacer una instalación segura y actualizada, el comando seria...</p>
+
+>   sudo apt update && sudo apt upgrade
+
+
+<p></p>
