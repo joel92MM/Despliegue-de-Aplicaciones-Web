@@ -30,6 +30,8 @@
 
 > sudo apt-get update
 
+<img src="" alt="actualizacion" width="500px">
+
 <p>Seguidamente instalaremos Java con este comando...</p>
 
 > sudo apt-get install default-jdk
