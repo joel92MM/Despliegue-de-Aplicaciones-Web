@@ -3,7 +3,7 @@
 <br/>
 
 # Índice #
-<hr/>
+
 
 ## 1. Requisitos previos a la instalación. ##
 * ### 1.2 Instalación de Open-JDK en el S.O. ###
