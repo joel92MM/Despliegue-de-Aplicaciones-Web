@@ -99,7 +99,7 @@
 
 <p>Y el contenido que debemos copiar es el siguiente.....</p>
 
-<img src="https://user-images.githubusercontent.com/73592097/136546597-b4cf325a-8e9d-46c1-a320-d8476ca6de38.png" alt="Contenido a copiar">
+<img src="https://user-images.githubusercontent.com/73592097/136546597-b4cf325a-8e9d-46c1-a320-d8476ca6de38.png" alt="Contenido a copiar" width="500px">
 
 <p>Iniciamos el servicio, con el siguiente comando....</p>
 
