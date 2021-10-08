@@ -149,3 +149,4 @@
 <img src="https://user-images.githubusercontent.com/73592097/136551938-c432ad8e-63ec-47c1-93dc-dbc42bdbb5d7.png" alt="tomcar en el navegador" width="500px">
 
 <p>Enhorabuena ya tenemos la instalación Apache-Tomcat10</p>
+<hr/>
