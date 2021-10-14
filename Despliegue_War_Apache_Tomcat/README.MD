@@ -48,9 +48,26 @@
 
 *<p>En el fichero web.xml, sustituiremos: </p>
 
->
+>   <display-name  app-web-alumno</display-name  
+
+<img src="" alt="">
+
+
 * <p>por lo siguiente</p>
 
 > display-name>app-web-aron</display-name
 
+<img src="" alt="">
+
+
 <p>donde aron seria nuestro nombre de alumno.</p>
+
+*<p>En el fichero index.jsp, sustituiremos el valor de alumno siguiendo los mismos pasos que con el fichero anterior: </p>
+
+
+
+<p>Lanzamos el siguiente comando: </p>
+
+> mvn clean install
+
+<img src="" alt="">
