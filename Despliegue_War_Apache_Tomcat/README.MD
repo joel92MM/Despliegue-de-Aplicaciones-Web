@@ -16,3 +16,28 @@
 * ### 1.2 Construcción del proyecto ###
 
 <hr/>
+
+**1. Requisitos  previos a la instalación**
+
+***1.1 Instalación de Java y Maven***
+
+<p>Dado que disponemos de Java de las instalaciones anteriores, ahora vamos a realizar la instalación de Maven </p>
+
+
+****Instalación de Maven en linux****
+
+<p>Para instalar Maven en Linux, hemos de escribir el comando siguiente: </p>
+
+> sudo apt install maven
+
+<img src="" alt="">
+
+<p>Para verificar la instalación de Maven en nuestro linux, utilizamos el siguiente comando: </p>
+
+> mvn -version
+
+<img src="" alt="">
+
+<p>Aparecera una ventana similar a la siguiente</p>
+
+<img src="" alt="">
