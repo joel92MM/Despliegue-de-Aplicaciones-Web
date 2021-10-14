@@ -41,3 +41,16 @@
 <p>Aparecera una ventana similar a la siguiente</p>
 
 <img src="" alt="">
+
+***1.2 Construcción del proyecto***
+
+<p>En el siguiente <a href="">enlace</a> esta disponible  el proyecto de una app en Java, donde haremos los siguientes cambios</p>
+
+*<p>En el fichero web.xml, sustituiremos: </p>
+
+>
+* <p>por lo siguiente</p>
+
+> display-name>app-web-aron</display-name
+
+<p>donde aron seria nuestro nombre de alumno.</p>
