@@ -1,19 +1,28 @@
 **Editando**
 
-<img src="https://user-images.githubusercontent.com/73592097/137165167-5fa8d67a-6d40-41f9-a67f-903ae9b88d87.png" alt="Portada">
-<img src="https://user-images.githubusercontent.com/73592097/137165448-fd5d6cae-1e1b-4c42-8d38-fc0178073370.png" alt="Portada2">
+<img src="https://user-images.githubusercontent.com/73592097/137605961-10eb3c30-0b53-494a-96ad-23616bf2fed2.png" alt="Portada">
+
 
 <br/>
 <hr/>
 
 # Índice #
 
+## 1. Requisitos previos para la instalación ##
 
-## 1. Creación de una app web en java. ##
-* ### 1.1 Requisitos previos para la instalación ###
-  * ###  Instalación de Java y Maven ###
+## 2. Pasos para realizar la instalación en local ##
 
-* ### 1.2 Construcción del proyecto ###
+*  ## 2.1 Actualización de los repositorios ##
+
+*  ## 2.2 Instalación de WildFly ##
+
+*  ## 2.3 Configurar a WildFly ## 
+
+*  ## 2.4 Acceso a WildFly ##
+
+## 3. Como añadir usuarios a WildFly ##
+
+*  ## 3.1 Gestionar la consola de forma remota ##
 
 <hr/>
 
