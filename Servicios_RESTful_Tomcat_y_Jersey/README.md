@@ -59,7 +59,7 @@
 ***2.3 Mejoras en el servicio***
 
 
-<img src="" alt="" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/137989879-24c80106-fe02-4b34-9af8-8707da21340c.png" alt="cambios fichero xml" width="800px">
 <img src="" alt="" width="800px">
 <img src="" alt="" width="800px">
 <img src="" alt="" width="800px">
