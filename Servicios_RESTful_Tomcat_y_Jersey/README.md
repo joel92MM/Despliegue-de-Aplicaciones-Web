@@ -31,6 +31,10 @@
 
 <p>En el siguiente enlace, disponemos de un proyecto Java, <a href="https://github.com/jpexposito/docencia/tree/master/comun/ejemplos/java/rest-service">enlace</a></p>
 
+<p>Abrimos el fichero en VSCODE, y crearemos el fichero .war</p>
+
+<img src="" alt="fichero war" width="800px">
+
 **2. Despliegue del servicio**
 
 <p>Siguiendo los pasos que la anterior tarea, desplegamos el servicio en nuestro servidor de aplicaciones Tomcat</p>
