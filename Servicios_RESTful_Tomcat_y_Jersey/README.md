@@ -31,10 +31,6 @@
 
 <p>En el siguiente enlace, disponemos de un proyecto Java, <a href="https://github.com/jpexposito/docencia/tree/master/comun/ejemplos/java/rest-service">enlace</a></p>
 
-<p>Abrimos el fichero en VSCODE, y crearemos el fichero .war</p>
-
-<img src="" alt="fichero war" width="800px">
-
 **2. Despliegue del servicio**
 
 <p>Siguiendo los pasos que la anterior tarea, desplegamos el servicio en nuestro servidor de aplicaciones Tomcat</p>
@@ -64,9 +60,9 @@
 
 
 <img src="https://user-images.githubusercontent.com/73592097/137989879-24c80106-fe02-4b34-9af8-8707da21340c.png" alt="cambios fichero xml" width="800px">
-<img src="" alt="" width="800px">
-<img src="" alt="" width="800px">
-<img src="" alt="" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/137990313-64c12022-d666-4b88-8746-86c625f0a458.pn" alt="clean" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/137990644-5543a54e-a5a8-4186-83b1-3ce9e3a4288f.png" alt="target" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/137993260-eca478d0-f1a4-46c8-9f54-844799795b7a.png" alt="logs" width="800px">
 <img src="" alt="" width="800px">
 <img src="" alt="" width="800px">
 <img src="" alt="" width="800px">
