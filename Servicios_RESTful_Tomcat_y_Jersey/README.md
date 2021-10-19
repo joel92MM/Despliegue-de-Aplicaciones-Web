@@ -33,11 +33,44 @@
 
 **2. Despliegue del servicio**
 
-<p>Siguiendo los pasos que la anterior tarea, desplegamos el servicio en nuestro servidor Tomcat</p>
+<p>Siguiendo los pasos que la anterior tarea, desplegamos el servicio en nuestro servidor de aplicaciones Tomcat</p>
+<img src="https://user-images.githubusercontent.com/73592097/137811793-624e3fbe-dd98-46e8-a67d-a33af7e7e1e8.png" alt="servidor de aplicaciones" width="800px">
 
 ***2.1 Consumo del servicio***
 
-<p>Veremos el servicio desplegado en la siguiente url</p>
+<p>Nos descargaremos un cliente rest, desde este <a href="https://install.advancedrestclient.com/install">enlace</a>.</p>
+
+<img src="https://user-images.githubusercontent.com/73592097/137811807-2e0dc042-0e1a-45c8-b570-6e07840c2678.png" alt="descarga cliente rest" width="800px">
+
+<p>Una vez instalado, iniciamos la aplicación</p>
+
+
+<p>Comprobaremos si el servicio esta desplegado </p>
+
+<img src="" alt="" width="800px">
+
+
+
+<p>Vamos a la carpeta de logs para buscar el error</p>
+
 ***2.2 Problemas durante el despliegue***
 
+
 ***2.3 Mejoras en el servicio***
+
+
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
+<img src="" alt="" width="800px">
