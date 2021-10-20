@@ -38,13 +38,13 @@
 
 > java --version
 
-<img src="" alt="versión de java" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138179714-6e2d3432-a607-44c4-a811-993b02f6de96.png" alt="versión de maven" width="800px">
 
 <br/>
 
 > mvn -version
 
-<img src="" alt="versión de maven" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138179719-3f36224c-9360-43c9-b20d-fa0ba55dcc90.png" alt="versión de java" width="800px">
 
 
 **2. Pasos para realizar la instalación en local**
@@ -58,7 +58,7 @@
 
 >  sudo apt update && sudo apt upgrade
 
-<img src="" alt="actualización de repositorios" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138179721-b00c6d26-fff0-4dd8-b68f-bcdf5b523385.png" alt="actualización de repositorios" width="800px">
 
 ***2.2 Instalación de WildFly***
 
