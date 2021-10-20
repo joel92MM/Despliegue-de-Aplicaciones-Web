@@ -1,0 +1,227 @@
+**Editando**
+
+<img src="https://user-images.githubusercontent.com/73592097/137605961-10eb3c30-0b53-494a-96ad-23616bf2fed2.png" alt="Portada">
+
+
+<br/>
+<hr/>
+
+# Índice #
+
+## 1. Requisitos previos para la instalación ##
+
+*  ## 1.1 Instalación de Java y Maven ##
+
+
+## 2. Pasos para realizar la instalación en local ##
+
+*  ## 2.1 Actualización de los repositorios ##
+
+*  ## 2.2 Instalación de WildFly ##
+
+*  ## 2.3 Configurar a WildFly ##
+
+*  ## 2.4 Acceso a WildFly ##
+
+## 3. Como añadir usuarios a WildFly ##
+
+*  ## 3.1 Gestionar la consola de forma remota ##
+
+<hr/>
+
+**1. Requisitos  previos a la instalación**
+
+<p>Tener un S.O. Ubuntu 20.04 con un cuenta de superusuario no root. También es necesario disponer de Java instalado y Maven.</p>
+
+***1.1 Instalación de Java y Maven***
+<p>Prioritariamente tenemos que tener instalado Java y Maven en nuestro equipo, para asegurarnos ejecutaremos los siguientes comandos que les muestro a continuación: </p>
+
+> java --version
+
+<img src="" alt="versión de java" width="800px">
+
+<br/>
+
+> mvn -version
+
+<img src="" alt="versión de maven" width="800px">
+
+
+**2. Pasos para realizar la instalación en local**
+
+***2.1 Instalación de Java y Maven***
+
+
+<p>Actualizaremos los repositorios y el sistema operativo para comprobar que la instalación de wildfly, en una instalación de Ubuntu segura y actualizada</p>
+
+<p>Mediante este comando </p>
+
+>  sudo apt update && sudo apt upgrade
+
+<img src="" alt="actualización de repositorios" width="800px">
+
+***2.2 Instalación de WildFly***
+
+<p>A continuación procederemos a descargar WildFly, para Ubuntu 20.04 LTS desde la página del sitio oficial, donde estará disponible una versión estable, veremos un paquete en varios formatos ZIP, donde vamos a descargarlo con el siguiente comando..</p>
+
+>  wget https://github.com/wildfly/wildfly/releases/download/25.0.0.Final/wildfly-25.0.0.Final.zip
+
+
+<img src="" alt="descarga del paquete" width="800px">
+
+<p>Ahora crearemos el nuevo grupo y usuario de wildfly, con el siguiente comando...</p>
+
+> sudo groupadd -r wildfly
+sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
+
+
+<img src="" alt="creación del nuevo grupo y usuario" width="800px">
+
+<p>Descomprimiremos el paquete  descargado directamente desde su ubicación, con el siguiente comando</p>
+
+> sudo tar xf /tmp/wildfly-25.0.0.Final.zip -C /opt/
+
+<img src="" alt="descomprimir el paquete" width="800px">
+
+<p>Crearemos un enlace simbólico, con el siguiente comando...</p>
+
+> sudo ln -s /opt/wildfly-25.0.0.Final.zip /opt/wildfly
+
+
+<img src="" alt="creacion de enlace simbólico width="800px">
+
+<p>Daremos acceso al usuario y grupo wildfly</p>
+
+> sudo chown -RH wildfly: /opt/wildfly
+
+<img src="" alt="acceso a usuario y grupo" width="800px">
+
+<p>Luego configuramos e iniciamos el servicio, con el siguiente comando...</p>
+
+> sudo mkdir -p /etc/wildfly
+
+> sudo cp /opt/wildfly/docs/contrib/scripts/systemd/wildfly.conf /etc/wildfly/
+
+> sudo nano /etc/wildfly/wildfly.conf
+
+> **WILDFLY_BIND=0.0.0.0**
+
+> sudo cp /opt/wildfly/docs/contrib/scripts/systemd/launch.sh /opt/wildfly/bin/
+
+> sudo sh -c 'chmod +x /opt/wildfly/bin/*.sh'
+
+> sudo cp /opt/wildfly/docs/contrib/scripts/systemd/wildfly.service /etc/systemd/system/
+
+> sudo systemctl daemon-reload
+
+<img src="" alt="configurar e iniciar el servicio" width="800px">
+
+<p>Iniciamos el servicio con el siguiente comando....</p>
+
+>   sudo systemctl start wildfly
+
+<img src="" alt="iniciar el servicio" width="800px">
+
+<p>Verificaremos el estado del servicio con el comando...</p>
+
+> sudo systemctl status wildfly
+
+<img src="" alt="verificacion del servicio" width="800px">
+
+<p>Para que wildfly inicie el servicio automáticamente en cada arranque, debemos habilitar el servicio con el comando...</p>
+
+> sudo systemctl enable wildfly
+
+<img src="" alt="inicio automatico del servicio" width="800px">
+
+***2.3 Configurar a WildFly***
+
+<p>Seguidamente vamos a permitir el tráfico por un puerto especifico, en nuestro caso utilizaremos el 8084, con el siguiente comando..</p>
+
+> sudo ufw allow 8084/tcp
+
+<img src="" alt="permitir tráfico width="800px">
+
+***2.4 Acceso a WildFly***
+
+<p>Accederemos a WildFly desde un navegador, indicándole (IP, nombre DNS, dominio, etc.) y el puerto de conexión, el 8084. Y tendremos desplegado Wildfly.</p>
+
+<img src="" alt="acceso por navegador" width="800px">
+
+**3. Como añadir usuarios a WildFly**
+
+<p>Crearemos el usuario administrador, con el siguiente comando</p>
+
+> sudo /opt/wildfly/bin/add-user.sh
+
+<img src="" alt="creacion usuario administrador" width="800px">
+
+<p>Seleccionaremos la opción a, indicándole que es un usuario de gestión</p>
+
+<img src="" alt="seleccion de opcion" width="800px">
+
+<p>Obtenemos un mensaje como el siguiente</p>
+
+> $ ./add-user.sh
+
+> What type of user do you wish to add?
+ a) Management User (mgmt-users.properties)
+ b) Application User (application-users.properties)
+(a): a
+
+> Enter the details of the new user to add.
+Using realm 'ManagementRealm' as discovered from the existing property files.
+Username : admin123
+Password recommendations are listed below. To modify these restrictions edit the add-user.properties configuration file.
+ - The password should be different from the username
+ - The password should not be one of the following restricted values {root, admin, administrator}
+ - The password should contain at least 8 characters, 1 alphabetic character(s), 1 digit(s), 1 non-alphanumeric symbol(s)
+Password :
+Re-enter Password :
+What groups do you want this user to belong to? (Please enter a comma separated list, or leave blank for none)[  ]:
+About to add user 'admin123' for realm 'ManagementRealm'
+Is this correct yes/no? yes
+Added user 'admin123' to file
+ value="UGFzc3dvcmQxMjM="
+ ... />
+
+
+<img src="" alt="obtencion de mensaje" width="800px">
+
+***3.1 Gestionar la consola de forma remota***
+
+<p>Ejecutaremos el siguiente comando para realizar la configuración, con el siguiente comando..</p>
+
+>   sudo nano /etc/wildfly/wildfly.conf
+
+>  WILDFLY_CONSOLE_BIND=0.0.0.0
+
+>  sudo nano /opt/wildfly/bin/launch.sh
+
+
+<img src="" alt="realizando configuración" width="800px">
+
+<p>Nos saldrá unas opciones que indican en que modo desearemos lanzar el servidor, (standalone o domain)</p>
+
+<img src="" alt="obtencion de mensaje" width="800px">
+
+<p>Para finalizar, ejecutamos el siguiente comando...</p>
+
+>  sudo systemctl restart wildfly
+
+>  sudo nano /etc/systemd/system/wildfly.service
+
+>  ExecStart=/opt/wildfly/bin/launch.sh $WILDFLY_MODE $WILDFLY_CONFIG $WILDFLY_BIND $WILDFLY_CONSOLE_BIND
+
+>  sudo systemctl daemon-reload
+
+>  sudo systemctl restart wildfly
+
+<img src="" alt="finalización" width="800px">
+
+<p>Abriremos la consola de cli, con el siguiente comando...</p>
+
+>   cd /opt/wildfly/bin/
+  ./jboss-cli.sh --connect
+
+  <img src="" alt="consola cli" width="800px">
