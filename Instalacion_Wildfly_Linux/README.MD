@@ -64,10 +64,14 @@
 
 <p>A continuación procederemos a descargar WildFly, para Ubuntu 20.04 LTS desde la página del sitio oficial, donde estará disponible una versión estable, veremos un paquete en varios formatos ZIP, donde vamos a descargarlo con el siguiente comando..</p>
 
->  wget https://github.com/wildfly/wildfly/releases/download/25.0.0.Final/wildfly-25.0.0.Final.zip
+<p>Para ello nos situamos en la carpeta /tmp para descargarlo </p>
+
+<img src="https://user-images.githubusercontent.com/73592097/138187286-b6a68684-bd2f-4d0c-a280-022e81eda292.png" alt="carpeta tmp" width="800px">
+
+>  wget https://github.com/wildfly/wildfly/releases/download/25.0.0.Final/wildfly-25.0.0.Final.tar.gz
 
 
-<img src="" alt="descarga del paquete" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138187278-46d22053-12b8-413e-95d2-c4ed712750a8.png" alt="descarga del paquete" width="800px">
 
 <p>Ahora crearemos el nuevo grupo y usuario de wildfly, con el siguiente comando...</p>
 
@@ -75,13 +79,13 @@
 sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
 
-<img src="" alt="creación del nuevo grupo y usuario" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138187274-1195eee4-ca32-45f2-9e5a-4d4f0f36f2d7.png" alt="creación del nuevo grupo y usuario" width="800px">
 
 <p>Descomprimiremos el paquete  descargado directamente desde su ubicación, con el siguiente comando</p>
 
-> sudo tar xf /tmp/wildfly-25.0.0.Final.zip -C /opt/
+> sudo tar xvf /tmp/wildfly-25.0.0.Final.tar.gz -C /opt/
 
-<img src="" alt="descomprimir el paquete" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138187284-8f2ff7a1-309b-4ed8-9323-57caf343a67f.png" alt="descomprimir el paquete" width="800px">
 
 <p>Crearemos un enlace simbólico, con el siguiente comando...</p>
 
