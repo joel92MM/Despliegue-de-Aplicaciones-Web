@@ -193,13 +193,33 @@ sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 > Enter the details of the new user to add.
 Using realm 'ManagementRealm' as discovered from the existing property files.
 Username : admin123
-Password recommendations are listed below. To modify these restrictions edit the add-user.properties configuration file.
+<br/>
+
+> Password recommendations are listed below. To modify these restrictions edit the add-user.properties configuration file.
+
+<br/>
  >  The password should be different from the username
- >  The password should not be one of the following restricted values {root, admin, administrator}
- >  The password should contain at least 8 characters, 1 alphabetic character(s), 1 digit(s), 1 non-alphanumeric symbol(s)
-Password :
-Re-enter Password :
-What groups do you want this user to belong to? (Please enter a comma separated list, or leave blank for none)[  ]:
+
+ <br/>
+
+
+ > The password should not be one of the following restricted values {root, admin, administrator}
+
+ <br/>
+
+> The password should contain at least 8 characters, 1 alphabetic character(s), 1 digit(s), 1 non-alphanumeric symbol(s)
+
+ <br/>
+
+> Password :
+
+<br/>
+
+> Re-enter Password :
+
+<br/>
+
+> What groups do you want this user to belong to? (Please enter a comma separated list, or leave blank for none)[  ]:
 About to add user 'admin123' for realm 'ManagementRealm'
 Is this correct yes/no? yes
 Added user 'admin123' to file
