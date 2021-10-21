@@ -85,24 +85,32 @@ sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
 > sudo tar xvf /tmp/wildfly-25.0.0.Final.tar.gz -C /opt/
 
-<img src="https://user-images.githubusercontent.com/73592097/138187284-8f2ff7a1-309b-4ed8-9323-57caf343a67f.png" alt="descomprimir el paquete" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138191580-3ce84017-ec3c-4ca7-bac6-a46abce4bae0.png" alt="descomprimir el paquete" width="800px">
+
+
 
 <p>Crearemos un enlace simbólico, con el siguiente comando...</p>
 
 > sudo ln -s /opt/wildfly-25.0.0.Final.zip /opt/wildfly
 
 
-<img src="" alt="creacion de enlace simbólico width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138191807-1d35c458-f003-4f1d-84b6-8e20354c41d9.png" alt="simbolico" width="800px">
 
 <p>Daremos acceso al usuario y grupo wildfly</p>
 
 > sudo chown -RH wildfly: /opt/wildfly
 
-<img src="" alt="acceso a usuario y grupo" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138192154-2be98804-925d-4add-81ce-9056030977e7.png" alt="acceso a usuario y grupo" width="800px">
 
-<p>Luego configuramos e iniciamos el servicio, con el siguiente comando...</p>
+
+
+<p>Creamos la carpeta de servicio de Wildfly en el directorio /etc/</p>
 
 > sudo mkdir -p /etc/wildfly
+
+<img src="https://user-images.githubusercontent.com/73592097/138192915-29f93f42-14fe-44a2-b41d-4da8d7f613cc.png" alt="crear directorio" width="800px">
+
+<p>Luego configuramos e iniciamos el servicio, con el siguiente comando...</p>
 
 > sudo cp /opt/wildfly/docs/contrib/scripts/systemd/wildfly.conf /etc/wildfly/
 
@@ -118,25 +126,34 @@ sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
 > sudo systemctl daemon-reload
 
-<img src="" alt="configurar e iniciar el servicio" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138192997-ffedbe15-dc2d-4e4a-a9a8-0187bc13c1d1.png" alt="configurar e iniciar el servicio" width="800px">
+
+
+<img src="https://user-images.githubusercontent.com/73592097/138193053-868c9d18-9d44-41c3-bc26-603e3d71ba6d.png" alt="configurar e iniciar el servicio2" width="800px">
+
+<img src="https://user-images.githubusercontent.com/73592097/138193243-3e44ca64-546f-4b1e-9d60-dbd2fc1d42ac.png" alt="configurar e iniciar el servicio3" width="800px">
+
+<img src="https://user-images.githubusercontent.com/73592097/138193533-96322ee1-88f1-4870-bedd-1b2f13fb76c2.png" alt="configurar e iniciar el servicio4" width="800px">
+
+<img src="https://user-images.githubusercontent.com/73592097/138193561-15392a97-9e12-490c-9a62-78d7426aa5ab.png" alt="configurar e iniciar el servicio5" width="800px">
 
 <p>Iniciamos el servicio con el siguiente comando....</p>
 
 >   sudo systemctl start wildfly
 
-<img src="" alt="iniciar el servicio" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138195556-bbd636d7-6e8c-47ef-a12b-6121e8a7abda.png" alt="iniciar el servicio" width="800px">
 
 <p>Verificaremos el estado del servicio con el comando...</p>
 
 > sudo systemctl status wildfly
 
-<img src="" alt="verificacion del servicio" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138195557-717f1f0d-69e5-423a-be24-9b0578aae6ff.png" alt="verificacion del servicio" width="800px">
 
 <p>Para que wildfly inicie el servicio automáticamente en cada arranque, debemos habilitar el servicio con el comando...</p>
 
 > sudo systemctl enable wildfly
 
-<img src="" alt="inicio automatico del servicio" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138195562-13a1177f-0a9a-4967-b6ea-fdc7dad865ea.png" alt="inicio automatico del servicio" width="800px">
 
 ***2.3 Configurar a WildFly***
 
@@ -144,7 +161,7 @@ sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
 > sudo ufw allow 8084/tcp
 
-<img src="" alt="permitir tráfico width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138195563-d554c43e-2aa3-48db-8bdc-b80b15100153.png" alt="permitir tráfico" width="800px">
 
 ***2.4 Acceso a WildFly***
 
