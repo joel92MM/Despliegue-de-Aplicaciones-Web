@@ -243,6 +243,11 @@ Added user 'admin123' to file
 
 <img src="https://user-images.githubusercontent.com/73592097/138316165-6ba9ab09-9dd3-4fbc-96af-912608d0e8ec.png" alt="obtencion de mensaje2" width="800px">
 
+<p>Si nos hemos equivcado en la contraseña y la queremos cambiar seguiremos los pasos de la siguiente imagen</p>
+
+<img src="https://user-images.githubusercontent.com/73592097/138453172-78c74812-a67f-43f3-ada4-781abf67eb83.png" alt="cambio contraseña" width="800px">
+
+
 ***3.1 Gestionar la consola de forma remota***
 
 <p>Ejecutaremos el siguiente comando para realizar la configuración, con el siguiente comando..</p>
@@ -254,7 +259,10 @@ Added user 'admin123' to file
 >  sudo nano /opt/wildfly/bin/launch.sh
 
 
-<img src="" alt="realizando configuración" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138452657-8aedd15a-5b67-49ba-9b05-ec66967544fd.png" alt="realizando configuración" width="800px">
+
+<img src="" alt="obtencion de mensaje" width="800px">
+
 
 <p>Nos saldrá unas opciones que indican en que modo desearemos lanzar el servidor, (standalone o domain)</p>
 
@@ -272,11 +280,21 @@ Added user 'admin123' to file
 
 >  sudo systemctl restart wildfly
 
-<img src="" alt="finalización" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138452464-4aa9c9d5-5f48-4008-823e-454bb2f51bfd.png" alt="fcomandos" width="800px">
+<img src="" alt="carpeta" width="800px">
+<img src="" alt="carpeta2" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138451782-caef310e-df48-41f4-af8a-991b444cc47c.png" alt="comandos2" width="800px">
 
-<p>Abriremos la consola de cli, con el siguiente comando...</p>
+<p>Asignaremos temporalmente permisos a otros grupos para modificar el fichero, con el siguiente comando</p>
 
->   cd /opt/wildfly/bin/
-  ./jboss-cli.sh --connect
+<img src="https://user-images.githubusercontent.com/73592097/138451787-b4f3f9c7-454f-437e-abdc-3b64db706fc8.png" alt="permisos" width="800px">
 
-  <img src="" alt="consola cli" width="800px">
+<p>Ahora vamos al archivo standalone.xml y comentaremos las etiquetas inet-address</p>
+
+  <img src="https://user-images.githubusercontent.com/73592097/138451788-6fa077e8-5a68-4fea-b171-03a1bfbba6c8.png" alt="consola cli" width="800px">
+
+<p>Entramos en el modo administracion de consola con el usuario y contraseña que hemos asignado y nos tiene que aparecer una ventana similar a la siguiente.</p>
+
+<img src="https://user-images.githubusercontent.com/73592097/138453506-e9b89d14-dcf3-48ed-98be-ebe887b3d2f7.png" alt="acceso" width="800px">
+
+<p>Finalmente ya tenemos Wildfly instalado</p>
