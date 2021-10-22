@@ -87,11 +87,11 @@ sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
 <img src="https://user-images.githubusercontent.com/73592097/138191580-3ce84017-ec3c-4ca7-bac6-a46abce4bae0.png" alt="descomprimir el paquete" width="800px">
 
-
+<img src="https://user-images.githubusercontent.com/73592097/138315955-73b117e9-bcaf-431b-a980-94dcb93ac783.png" alt="mover fichero" width="800px">
 
 <p>Crearemos un enlace simbólico, con el siguiente comando...</p>
 
-> sudo ln -s /opt/wildfly-25.0.0.Final.zip /opt/wildfly
+> sudo ln -s /opt/wildfly-25.0.0.Final.tar.gz /opt/wildfly
 
 
 <img src="https://user-images.githubusercontent.com/73592097/138191807-1d35c458-f003-4f1d-84b6-8e20354c41d9.png" alt="simbolico" width="800px">
@@ -159,6 +159,17 @@ sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
 <p>Seguidamente vamos a permitir el tráfico por un puerto especifico, en nuestro caso utilizaremos el 8084, con el siguiente comando..</p>
 
+<p>Modificamos el puerto 8080, por el que tengamos libren en mi caso será el 8084, en el siguiente fichero...</p>
+
+> sudo nano /opt/wildfly/standalone/configuration/standalone.xml
+
+<img src="https://user-images.githubusercontent.com/73592097/138315368-e5361092-264a-43b2-a160-e7cd709b7e69.png" alt="fichero configurción" width="800px">
+
+<img src="https://user-images.githubusercontent.com/73592097/138315384-b94fd841-5471-4e3a-a43c-3ab1fa5f48da.png" alt="fichero configuracion" width="800px">
+
+
+<p>A continuación permitiremos el tráfico con el puerto, con el siguiente comando..</p>
+
 > sudo ufw allow 8084/tcp
 
 <img src="https://user-images.githubusercontent.com/73592097/138195563-d554c43e-2aa3-48db-8bdc-b80b15100153.png" alt="permitir tráfico" width="800px">
@@ -167,7 +178,7 @@ sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
 <p>Accederemos a WildFly desde un navegador, indicándole (IP, nombre DNS, dominio, etc.) y el puerto de conexión, el 8084. Y tendremos desplegado Wildfly.</p>
 
-<img src="" alt="acceso por navegador" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138314894-ba280454-4a4f-4b7e-a17e-fbc939b07e86.png" alt="acceso por navegador" width="800px">
 
 **3. Como añadir usuarios a WildFly**
 
@@ -226,8 +237,11 @@ Added user 'admin123' to file
  value="UGFzc3dvcmQxMjM="
  ... />
 
+<p>El usuario sera daw</p>
 
-<img src="" alt="obtencion de mensaje" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138316153-c2eccb78-6fdd-4e4b-a712-69cd5ca4e83b.png" alt="obtencion de mensaje" width="800px">
+
+<img src="https://user-images.githubusercontent.com/73592097/138316165-6ba9ab09-9dd3-4fbc-96af-912608d0e8ec.png" alt="obtencion de mensaje2" width="800px">
 
 ***3.1 Gestionar la consola de forma remota***
 
