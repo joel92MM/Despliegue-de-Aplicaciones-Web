@@ -104,19 +104,27 @@ sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
 
 
-<p>Creamos la carpeta de servicio de Wildfly en el directorio /etc/</p>
+<p>Creamos la carpeta de servicio de Wildfly en el directorio /etc/ y iniciamos el servico</p>
 
 > sudo mkdir -p /etc/wildfly
+> sudo cp /opt/wildfly/docs/contrib/scripts/systemd/wildfly.conf /etc/wildfly/
+
 
 <img src="https://user-images.githubusercontent.com/73592097/138192915-29f93f42-14fe-44a2-b41d-4da8d7f613cc.png" alt="crear directorio" width="800px">
 
-<p>Luego configuramos e iniciamos el servicio, con el siguiente comando...</p>
+<p>Visualizamos el fichero de configuracion de arranqe, para ver os valosres que tiene por defecto, con el siguiente comando..</p>
 
-> sudo cp /opt/wildfly/docs/contrib/scripts/systemd/wildfly.conf /etc/wildfly/
 
 > sudo nano /etc/wildfly/wildfly.conf
 
 > **WILDFLY_BIND=0.0.0.0**
+
+
+<img src="https://user-images.githubusercontent.com/73592097/138493180-c00e4714-49d4-4a85-866d-907897850e84.png" alt="comandos" width="800px">
+
+<img src="https://user-images.githubusercontent.com/73592097/138193053-868c9d18-9d44-41c3-bc26-603e3d71ba6d.png" alt="configurar e iniciar el servicio2" width="800px">
+
+<p>Lanzamos lo siguientes comandos para configurar el arranque</p>
 
 > sudo cp /opt/wildfly/docs/contrib/scripts/systemd/launch.sh /opt/wildfly/bin/
 
@@ -128,8 +136,6 @@ sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
 <img src="https://user-images.githubusercontent.com/73592097/138192997-ffedbe15-dc2d-4e4a-a9a8-0187bc13c1d1.png" alt="configurar e iniciar el servicio" width="800px">
 
-
-<img src="https://user-images.githubusercontent.com/73592097/138193053-868c9d18-9d44-41c3-bc26-603e3d71ba6d.png" alt="configurar e iniciar el servicio2" width="800px">
 
 <img src="https://user-images.githubusercontent.com/73592097/138193243-3e44ca64-546f-4b1e-9d60-dbd2fc1d42ac.png" alt="configurar e iniciar el servicio3" width="800px">
 
@@ -186,11 +192,8 @@ sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
 > sudo /opt/wildfly/bin/add-user.sh
 
-<img src="" alt="creacion usuario administrador" width="800px">
 
 <p>Seleccionaremos la opción a, indicándole que es un usuario de gestión</p>
-
-<img src="" alt="seleccion de opcion" width="800px">
 
 <p>Obtenemos un mensaje como el siguiente</p>
 
@@ -261,12 +264,16 @@ Added user 'admin123' to file
 
 <img src="https://user-images.githubusercontent.com/73592097/138452657-8aedd15a-5b67-49ba-9b05-ec66967544fd.png" alt="realizando configuración" width="800px">
 
-<img src="" alt="obtencion de mensaje" width="800px">
+
+
+<img src="https://user-images.githubusercontent.com/73592097/138494511-524c302c-fdd5-4fdb-8c1e-12ff7931dfa0.png" alt="obtencion de mensaje" width="800px">
 
 
 <p>Nos saldrá unas opciones que indican en que modo desearemos lanzar el servidor, (standalone o domain)</p>
 
-<img src="" alt="obtencion de mensaje" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138494364-539907c2-e20f-41de-9ba9-4e6a2f580629.png" alt="obtencion de mensaje" width="800px">
+
+
 
 <p>Para finalizar, ejecutamos el siguiente comando...</p>
 
@@ -281,8 +288,8 @@ Added user 'admin123' to file
 >  sudo systemctl restart wildfly
 
 <img src="https://user-images.githubusercontent.com/73592097/138452464-4aa9c9d5-5f48-4008-823e-454bb2f51bfd.png" alt="fcomandos" width="800px">
-<img src="" alt="carpeta" width="800px">
-<img src="" alt="carpeta2" width="800px">
+<img src="https://user-images.githubusercontent.com/73592097/138494748-2506273e-ba89-4a4a-8b25-a5a5af93d8e7.png" alt="carpeta" width="800px">
+
 <img src="https://user-images.githubusercontent.com/73592097/138451782-caef310e-df48-41f4-af8a-991b444cc47c.png" alt="comandos2" width="800px">
 
 <p>Asignaremos temporalmente permisos a otros grupos para modificar el fichero, con el siguiente comando</p>
