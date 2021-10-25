@@ -50,10 +50,19 @@
 
 ***2.1 Descarga de los ejemplos***
 
-<p>En mi git teneis disponible la carpeta de los proyectos para descargar, en esta <a href="https://github.com/joel92MM/Git/tree/main/Instalacion_de_Servicios_en_Wildfly_Linux/quickstart-main">url</a>.</p>
+<p>Abriremos una terminal, nos dirigimos a la carpeta tmp, y ahí, ponemos la carpeta que vamos a descargar a continuación</p>
+
+> cd /tmp
+
+<img src="" alt="carpeta tmp" width="800px"/>
+
+<p>En mi git tenéis disponible la carpeta de los proyectos para descargar o clonar , en esta <a href="https://github.com/joel92MM/Git/tree/main/Instalacion_de_Servicios_en_Wildfly_Linux/quickstart-main">url</a>.</p>
+
+
 
 ***2.2 Instalación de Servicio Hello-RS***
-<p>Una vez descargada la carpeta de ejemplos, accedemos al directorio helloworld-rs y ejecutamos el siguiente comando..</p>
+
+<p>Accederemos al directorio helloworld-rs, desde la terminal y ejecutamos el siguiente comando..</p>
 
 > mvn clean install
 
@@ -62,14 +71,37 @@
 
 <p>Finalizara con un mensaje como el siguiente</p>
 
-<img src="" alt="fnalizacion" width="800px"/>
+<img src="" alt="finalización" width="800px"/>
 
-<p>Finalizada la compilacion del proyecto acudiremos a wildfly, al apartado <strong>deployments</strong>, vamos a la pestaña <strong>+</strong>, y seleccionamos la carpeta donde se encuentra nuestro proyecto. En concreto la ruta, donde se encuentra el archivo helloworld-rs.war</p>
+<p>Finalizada la compilación del proyecto acudiremos a wildfly, al apartado <strong>deployments</strong>, vamos a la pestaña <strong>+</strong>,
 
-<p>Posteriormente pulsamos en el boton siguiente</p>
+<img src="" alt="finalización" width="800px"/>
 
 
-<p></p>
+ <p>Seleccionamos la carpeta donde se encuentra nuestro proyecto. En concreto la ruta, donde se encuentra el archivo helloworld-rs.war</p>
+
+ <img src="" alt="finalización" width="800px"/>
+
+
+<p>Posteriormente pulsamos en el botón siguiente</p>
+
+<img src="" alt="finalización" width="800px"/>
+
+
+<p>En la siguiente ventana, dejamos las opciones como están y continuamos</p>
+
+<img src="" alt="finalización" width="800px"/>
+
+
+<p>Finalizará con un mensaje similar al siguiente</p>
+
+<img src="" alt="finalización" width="800px"/>
+
+
+
+
+
+<p>Una vez desplegado el Servicio, abrimos el navegador y en la url ponemos nuestra<strong> ip:puerto/helloworld-rs</strong>, y verificamos que se muestra como en las ventanas siguientes.</p>
 
 
 
