@@ -50,7 +50,30 @@
 
 ***2.1 Descarga de los ejemplos***
 
+<p>En mi git teneis disponible la carpeta de los proyectos para descargar, en esta <a href="https://github.com/joel92MM/Git/tree/main/Instalacion_de_Servicios_en_Wildfly_Linux/quickstart-main">url</a>.</p>
+
 ***2.2 Instalación de Servicio Hello-RS***
+<p>Una vez descargada la carpeta de ejemplos, accedemos al directorio helloworld-rs y ejecutamos el siguiente comando..</p>
+
+> mvn clean install
+
+
+<img src="" alt="mvn clean" width="800px"/>
+
+<p>Finalizara con un mensaje como el siguiente</p>
+
+<img src="" alt="fnalizacion" width="800px"/>
+
+<p>Finalizada la compilacion del proyecto acudiremos a wildfly, al apartado <strong>deployments</strong>, vamos a la pestaña <strong>+</strong>, y seleccionamos la carpeta donde se encuentra nuestro proyecto. En concreto la ruta, donde se encuentra el archivo helloworld-rs.war</p>
+
+<p>Posteriormente pulsamos en el boton siguiente</p>
+
+
+<p></p>
+
+
+
+
 
 ***2.3 Instalación de Servicio Hello-WS***
 
