@@ -1,6 +1,6 @@
 
 
-
+<img src="https://user-images.githubusercontent.com/73592097/138740657-9133b3d1-6f36-4be5-a09d-bcfd79276043.png" alt="portada" width="800px">
 <br/>
 <hr/>
 
@@ -46,5 +46,12 @@
 
 <img src="https://user-images.githubusercontent.com/73592097/138314894-ba280454-4a4f-4b7e-a17e-fbc939b07e86.png" alt="acceso por navegador" width="800px">
 
+**2. Pasos para realizar la instalación de los servicios res/ws en WildFly**
+
+***2.1 Descarga de los ejemplos***
+
+***2.2 Instalación de Servicio Hello-RS***
+
+***2.3 Instalación de Servicio Hello-WS***
 
 <img src="" alt="desplegado wildfly" width="800px"/>
