@@ -1,4 +1,4 @@
-<img alt="README-d161c099.png" src="assets/README-d161c099.png" width="800px">
+<img alt="README-d161c099.png" src="assets/README-d161c099.png" width="800px"/>
 <br/>
 <br/>
 <hr/>
@@ -29,17 +29,22 @@
 
 > sudo apt update
 
+<img alt="README-7f757927.png" src="assets/README-7f757927.png" width="800px"/>
+
 **3. PHP para Apache**
 
 <p> Si usas Apache como servicio web, el paquete que necesitas será libapache2-mod-php</p>
 
 >  sudo apt install -y php
 
+<img alt="README-6c90dbac.png" src="assets/README-6c90dbac.png" width="800px"/>
 **4. PHP para Nginx**
 
 <p>Si usas Nginx, el paquete que necesitas es php-fpm</p>
 
 > sudo apt install -y php-fpm
+
+<img alt="README-991ed243.png" src="assets/README-991ed243.png" width="800px"/>
 
 
 <p>Será necesario configurar Nginx para conectar con el servicio PHP-FPM, editando su archivo de configuración, ya que PHP,se instala como servicio independiente</p>
@@ -79,14 +84,31 @@
         }
 ...
 </p>
+<img alt="README-11084457.png" src="assets/README-11084457.png" width="800px"/>
+
+<img alt="README-6cfa9392.png" src="assets/README-6cfa9392.png" width="800px"/>
 
 <p>Recargamos la configuracion de Nginx</p>
 
->sudo systemctl reload nginx 
+>sudo systemctl reload nginx
 
-<p></p>
-<p></p>
-<p></p>
+<img alt="README-707ad6c9.png" src="assets/README-707ad6c9.png" width="800px"/>
+
+<p>Para ver la version instalada de PHP o si esta instalado utilizamos...</p>
+
+> php -v
+
+<img alt="README-eb5ea5f0.png" src="assets/README-eb5ea5f0.png" width="800px"/>
+
+**5. Como probar PHP en Ubuntu 20.04**
+
+<p>Para probar PHP en Ubuntu 20.04 crearemos un pequeño archivo fácilmente accesible vía web</p>
+
+>   sudo nano /var/www/html/info.php
+
+<p>El contenido es el siguiente: </p>
+
+<img alt="README-5bb49e6d.png" src="assets/README-5bb49e6d.png" width="800px"/>
 <p></p>
 <p></p>
 <p></p>
