@@ -38,6 +38,7 @@
 >  sudo apt install -y php
 
 <img alt="README-6c90dbac.png" src="assets/README-6c90dbac.png" width="800px"/>
+
 **4. PHP para Nginx**
 
 <p>Si usas Nginx, el paquete que necesitas es php-fpm</p>
@@ -109,13 +110,35 @@
 <p>El contenido es el siguiente: </p>
 
 <img alt="README-5bb49e6d.png" src="assets/README-5bb49e6d.png" width="800px"/>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+
+<p>Ahora abriremos el navegador web e introducimos la siguiente direccion que se muestra en la imagen se vera una ventana similar</p>
+<img alt="README-57292a5d.png" src="assets/README-57292a5d.png" width="800px"/>
+
+**6. Configuración de subdominios**
+
+<p>Copiaremos la pagina de php que hemos creado en la carpeta de subdominio de la práctica anterior, con el siguiente comando..</p>
+
+> cp /var/www/html/info.php /var/www/ejemplojoel/html/
+
+<img alt="README-9a84d611.png" src="assets/README-9a84d611.png" width="800px"/>
+
+<p>Aplicaremos la misma configuracion al archivo de configuracion de subdominio ejemplojoel, como en la seccion anterior, con el comando...</p>
+
+> nano /etc/nginx/sites-available/ejemplojoel
+
+<p>Copiaremos el contenido en ese carpeta como se muestra en la imagen</p>
+
+<img alt="README-3722ac6c.png" src="assets/README-3722ac6c.png" width="800px"/>
+
+<p>Ahora recargamos el servicio nginx, con el comando</p>
+
+> sudo systemctl reload nginx
+
+<p>Posteriormente abriremos el navegador web e introducimos la direccion de nuestro servidor como se muestra en la imagen</p>
+
+<img alt="README-a7461595.png" src="assets/README-a7461595.png" width="800px"/>
+
+<p>Finalmente ya tendremos php instalado</p>
 
 <hr/>
 
