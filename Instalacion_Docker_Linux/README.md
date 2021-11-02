@@ -16,6 +16,7 @@
 
 >sudo apt update
 
+
 <p>Instalarmos algunos paquetes de requisitos previos que permitan a apt usar paquetes a través
 de HTTPS</p>
 
@@ -32,6 +33,7 @@ de HTTPS</p>
 <p>A continuación, actualice el paquete de base de datos con los paquetes de Docker del repositorio recién agregado:</p>
 
 > sudo apt update
+
 
 <p>Asegúrate de estar a punto de realizar la instalación desde el repositorio de Docker en lugar del repositorio predeterminado de Ubuntu:</p>
 
@@ -58,3 +60,19 @@ TriggeredBy: ● docker.socket
      CGroup: /system.slice/docker.service
              └─3169 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/cont>
 </p>
+
+
+
+
+![2](https://user-images.githubusercontent.com/73592097/139929327-09744aa7-3850-47ac-8b8e-e565b23f7ee6.png)
+![3](https://user-images.githubusercontent.com/73592097/139929330-a05a29a6-2685-454b-a2eb-afe38f1d615c.png)
+![4](https://user-images.githubusercontent.com/73592097/139929335-4c7cfa5d-3425-4372-a409-fbfcd9fe19c3.png)
+![5](https://user-images.githubusercontent.com/73592097/139929338-482ef84d-637a-4c35-aa24-6ef1b15d0f4d.png)
+![1](https://user-images.githubusercontent.com/73592097/139929430-eda714be-ed1e-4649-83e5-631d37ea7a57.png)
+
+
+![6](https://user-images.githubusercontent.com/73592097/139934580-21963bbc-6e50-490f-a93d-4f451f16f662.png)
+![7](https://user-images.githubusercontent.com/73592097/139934602-07f5fd9e-027b-4653-a60e-8017956443eb.png)
+![8](https://user-images.githubusercontent.com/73592097/139934609-044f6d8a-852c-498c-9ffb-51f7e21250a6.png)
+![9](https://user-images.githubusercontent.com/73592097/139934619-a8e28755-bca8-4ca2-b38b-2ff1211e6f42.png)
+![10](https://user-images.githubusercontent.com/73592097/139934624-d799a594-17bd-4801-b9be-91e8b1187a39.png)
