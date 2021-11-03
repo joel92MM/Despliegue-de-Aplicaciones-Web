@@ -58,6 +58,10 @@ de HTTPS</p>
 
 ![7](https://user-images.githubusercontent.com/73592097/139934602-07f5fd9e-027b-4653-a60e-8017956443eb.png)
 
+<p>Paramos todos los servicios</p>
+
+![12](https://user-images.githubusercontent.com/73592097/140178530-b97302bd-6964-4443-a54a-e9c7958fb87a.png)
+
 <p>Con esto, Docker quedará instalado, el demonio se iniciará y el proceso se habilitará para ejecutarse en el inicio. Compruebe que funcione:</p>
 
 > sudo systemctl status docker
@@ -90,17 +94,26 @@ TriggeredBy: ● docker.socket
 
 >  sudo docker ps
 
+![21](https://user-images.githubusercontent.com/73592097/140178533-218425af-83d7-4302-bc2a-f20fb5dd8246.png)
+
+
 <p>Para ver todos los contenedores, activos e inactivos, ejecute docker ps con el conmutador -a:</p>
 
 >  docker ps -a
+
+![22](https://user-images.githubusercontent.com/73592097/140178535-2774e6b5-e7ac-4f73-9c12-be4afa21e6e1.png)
 
 <p>Para ver el último contenedor que creó, utilizaremos el comando../p>
 
 >   docker ps -l
 
+![23](https://user-images.githubusercontent.com/73592097/140178536-f511e33a-a50d-438d-a4ef-2f06922b40cc.png)
+
 <p>Listar las imágenes de Docker de nuevo, con el siguiente comando..</p>
 
 >sudo docker images
+
+![24](https://user-images.githubusercontent.com/73592097/140178537-b57fabf5-728d-47e1-b2e6-39e22b9b33f3.png)
 
 
 <hr/>
