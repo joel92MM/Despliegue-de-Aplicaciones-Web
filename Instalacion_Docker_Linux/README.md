@@ -12,6 +12,7 @@
 <hr/>
 <br/>
 
+**1. Instalar Docker**
 
 <p>Actualizaremos la lista de paquetes con el siguiente comando..</p>
 
@@ -86,9 +87,14 @@ TriggeredBy: ● docker.socket
 
 ![9](https://user-images.githubusercontent.com/73592097/139934619-a8e28755-bca8-4ca2-b38b-2ff1211e6f42.png)
 
+
+**2. Trabajar con imágenes de Docker**
+
 <p>Para verificar si puede acceder a imágenes, insertamos el siguiente comando</p>
 
 ![10](https://user-images.githubusercontent.com/73592097/139934624-d799a594-17bd-4801-b9be-91e8b1187a39.png)
+
+**3. Administrar contenedores de Docker**
 
 <p>Con el siguiente comando veremos los contenedores activos de Docker, utilizaremos el comando...</p>
 
