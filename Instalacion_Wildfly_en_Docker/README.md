@@ -46,7 +46,7 @@
 
 <hr/>
 
-# Problemas que podemos encontrarnos#
+# Problemas que podemos encontrarnos #
 
 <p>Si no hemos equivocado al asignar el puerto y queremos eliminar el contenedor de la imagen hacemos lo siguiente: </p>
 
