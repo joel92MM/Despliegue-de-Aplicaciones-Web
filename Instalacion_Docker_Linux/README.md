@@ -12,6 +12,7 @@
 <hr/>
 <br/>
 
+
 <p>Actualizaremos la lista de paquetes con el siguiente comando..</p>
 
 >sudo apt update
@@ -84,3 +85,19 @@ TriggeredBy: ● docker.socket
 <p>Para verificar si puede acceder a imágenes, insertamos el siguiente comando</p>
 
 ![10](https://user-images.githubusercontent.com/73592097/139934624-d799a594-17bd-4801-b9be-91e8b1187a39.png)
+
+<p>Con el siguiente comando veremos los contenedores activos de Docker, utilizaremos el comando...</p>
+
+>  sudo docker ps
+
+<p>Para ver todos los contenedores, activos e inactivos, ejecute docker ps con el conmutador -a:</p>
+
+>  docker ps -a
+
+<p>Para ver el último contenedor que creó, utilizaremos el comando../p>
+
+>   docker ps -l
+
+<p>Listar las imágenes de Docker de nuevo, con el siguiente comando..</p>
+
+>sudo docker images
