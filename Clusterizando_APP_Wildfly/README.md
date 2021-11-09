@@ -166,12 +166,34 @@ networks: wildfly_network. Subred que estamos construyendo.<br/>
 ipam: Configuración de la subred.<br/>
 </p>
 
-<p>Para la creación del cluster de dos nodos vamos a ejecutar la sentencia:
-</p>
+<p>Abriremos la carpeta Dockerfile y hacemos los siguiente</p>
+
+<img alt="README-f67075b7.png" src="assets/README-f67075b7.png" width="800px"/>
+
+<p>Posteriormente listaremos las imagenes con el comando </p>
+
+>sudo docker-compose -a
+
+<p>Y luego las borramos todas con el siguiente comando</p>
+
+> sudo docker rmi $(sudo docker images -a -q) -f
+
+<p>Ahora subiremos el war para desplegarlo en los dos puertos, con el comando </p>
+
+> sudo docker-compose up --build
+
+<img alt="README-10558f91.png" src="assets/README-10558f91.png" width="800px"/>
 
 
 <p>Ahora tendremos desplegada la aplicación accesible a través del puerto 8081 </p>
 
+<p>Puerto 8080</p>
+
+<img alt="README-f9ea8196.png" src="assets/README-f9ea8196.png" width="800px"/>
+
+<p>Puerto 8081</p>
+
+<img alt="README-e51b92d1.png" src="assets/README-e51b92d1.png" width="800px"/>
 
 <hr/>
 
