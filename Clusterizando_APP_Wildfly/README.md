@@ -61,12 +61,117 @@
 
 <p> donde alumno seria nuestro alumno </p>
 
+<img alt="README-d50d4506.png" src="assets/README-d50d4506.png" width="800px"/>
+
 <p>En el fichero <strong>index.jsp</strong> realizaremos el mismo procedimiento que en el punto anterior </p>
+
+<img alt="README-2c537a49.png" src="assets/README-2c537a49.png" width="800px"/>
+
+<p>En el pom sustituiremos el nombre alumno por nuestro nombre</p>
+
+<img alt="README-65d1b67c.png" src="assets/README-65d1b67c.png" width="800px"/>
+
+<p>Abriremos la terminal de VSCODE, y añadiremos los comandos que se muestran en la imagen para acceder al proyecto</p>
+
+<img alt="README-c7df681d.png" src="assets/README-c7df681d.png" width="800px"/>
+
 <p>Seguidamente lanzamos el siguiente comando</p>
 
 > mvn clean install
 
-<p></p>
+<img alt="README-c9545444.png" src="assets/README-c9545444.png" width="800px"/>
+
+<p>En la carpeta target veremos el war que nos a creado</p>
+
+<img alt="README-04cac0fa.png" src="assets/README-04cac0fa.png" width="800px"/>
+
+<p>Una vez construido el proyecto, podremos ver el resultado ejecutando en modo local el siguiente comando</p>
+
+>mvn clean jetty:run
+
+<img alt="README-fda66225.png" src="assets/README-fda66225.png" width="800px"/>
+
+<p>Una vez terminada de ejecutar jetty podemos ver el resultado en nuestro navegador escribiendo lo siguiente</p>
+
+> localhost:8082
+
+<p>Nos mostrara un mensaje como el siguiente</p>
+
+<img alt="README-283970bc.png" src="assets/README-283970bc.png" width="800px"/>
+
+<p>Dentro de la carpeta de nuestra instalación debemos construir el dichero Dockerfile con el contenido siguiente: </p>
+
+<p>
+FROM jboss/wildfly<br/>
+
+ARG WAR_FILE=target/*.war<br/>
+##COPY ${JAR_FILE} app.jar<br/>
+
+ADD ${ARG} /opt/jboss/wildfly/standalone/deployments/<br/>
+
+ARG WILDFLY_NAME<br/>
+ARG CLUSTER_PW<br/>
+
+ENV WILDFLY_NAME=${WILDFLY_NAME}<br/>
+ENV CLUSTER_PW=${CLUSTER_PW}<br/>
+
+ENTRYPOINT /opt/jboss/wildfly/bin/standalone.sh -b=0.0.0.0 -bmanagement=0.0.0.0 -Djboss.server.default.config=standalone-full-ha.xml -Djboss.node.name=${WILDFLY_NAME} -Djava.net.preferIPv4Stack=true -Djgroups.bind_addr=$(hostname -i) -Djboss.messaging.cluster.password=${CLUSTER_PW}<br/>
+
+</p>
+<img alt="README-6442d388.png" src="assets/README-6442d388.png" width="800px"/>
+
+<p>Seguidamente  el fichero .yml (docker-compose.yml) para la construcción del cluster con el siguiente contenido</p>
+<p>
+version: '3.5'<br/>
+services:<br/>
+
+  wildfly1:<br/>
+    build:<br/>
+      context: .<br/>
+      args:<br/>
+        WILDFLY_NAME: wildfly_1<br/>
+        CLUSTER_PW: secret_password<br/>
+    image: wildfly_1<br/>
+    ports:<br/>
+    - 8080:8080<br/>
+    networks:<br/>
+      wildfly_network:<br/>
+
+  wildfly2:<br/>
+    build:<br/>
+      context: .<br/>
+      args:<br/>
+        WILDFLY_NAME: wildfly_2<br/>
+        CLUSTER_PW: secret_password<br/>
+    image: wildfly_2<br/>
+    ports:<br/>
+    - 8081:8080<br/>
+    networks:<br/>
+      wildfly_network:<br/>
+
+networks:<br/>
+  wildfly_network:<br/>
+    ipam:<br/>
+      driver: default<br/>
+
+</p>
+<img alt="README-05d3492a.png" src="assets/README-05d3492a.png" width="800px"/>
+<p>
+Observamos que existe:
+
+Dos servidores WILDFLY (1/2).<br/>
+Distintos puertos para el arraque de cada uno.<br/>
+CLUSTER_PW: clave para la construcción del cluster.<br/>
+networks: wildfly_network. Subred que estamos construyendo.<br/>
+ipam: Configuración de la subred.<br/>
+</p>
+
+<p>Para la creación del cluster de dos nodos vamos a ejecutar la sentencia:
+</p>
+
+
+<p>Ahora tendremos desplegada la aplicación accesible a través del puerto 8081 </p>
+
 
 <hr/>
 
