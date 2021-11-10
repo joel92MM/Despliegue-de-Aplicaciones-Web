@@ -40,7 +40,7 @@
 
 <p>Abriremos nuestro editor de código en nuestro caso VSCODE, y crearemos un nuevo proyecto, con la siguiente estructura de carpetas, como se muestra en la siguiente imagen</p>
 
-<img alt="README-3a9e1831.png" src="assets/README-3a9e1831.png" width="800px"/>
+<img alt="README-3a9e1831.png" src="assets/README-3a9e1831.png" width="300px" height="300px"/>
 
 <p>Nos vamos al dichero **Dockerfile** , introducimos la versión **8.0.0 de phph con apache **</p>
 
