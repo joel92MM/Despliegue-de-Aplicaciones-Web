@@ -92,16 +92,18 @@ Para verificar los contenedores corriendo desde Docker Compose:
 
 <img alt="README-a0d74048.png" src="assets/README-a0d74048.png" width="800px"/>
 
-<p>A partir de aquí, el proyecto que vayas a trabajar, tendrá que colocarlo dentro del directorio www/, por ejemplo, si tu proyecto se llama app-servidor, lo revisarás en tu navegador como 127.0.0.1/app-servidor.</p>
+<p>A partir de aquí, vamos a colocar el proyecto a trabajar, dentro del directorio www/, por ejemplo, si tu proyecto se llama app-servidor, lo revisarás en tu navegador como 127.0.0.1/app-servidor.</p>
+
+<img alt="README-3a1dc51c.png" src="assets/README-3a1dc51c.png" width="800px"/>
 
 <p>Para detener el stack con Docker Compose, es de esta manera:
 </p>
 
 >  docker-compose stop
 
+<img alt="README-cf49102f.png" src="assets/README-cf49102f.png" width="800px"/>
 
-<p></p>
-<p></p>
+
 
 
 <hr/>
