@@ -1,4 +1,4 @@
-version: "3.5"
+<pre>version: "3.5"
 services:
   wildfly1:
     build:
@@ -77,3 +77,5 @@ networks:
   wildfly_network:
     ipam:
       driver: default
+
+      </pre>
