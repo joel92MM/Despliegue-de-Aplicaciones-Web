@@ -62,8 +62,14 @@
 ![5](https://user-images.githubusercontent.com/73592097/146677095-4df6a1f6-fa63-4453-a72f-1024b34715f9.png)
 
 **3. Verificar el servicio FTP en Ubuntu**
-<p></p>
-<p></p>
+<p>Accederemos al navegadorn donde introducimos la direccion ftp://ip, pero muestra solo la ventana siguiente</p>
+
+![Captura de pantalla de 2021-12-19 14-58-41](https://user-images.githubusercontent.com/73592097/146679983-6e5f5236-cd56-44ee-8631-20c0869d3682.png)
+
+<p>De otra manera, si accedemos por el terminal introduciendo ftp ip, entramos dentro pidiendo las credenciales de nuestro usuario con contraseña para entrar</p>
+
+![Captura de pantalla de 2021-12-19 15-03-15](https://user-images.githubusercontent.com/73592097/146679984-1d84e498-2ce4-4adb-a2f5-9d683f98890c.png)
+
 <p></p>
 <p></p>
 <p></p>
