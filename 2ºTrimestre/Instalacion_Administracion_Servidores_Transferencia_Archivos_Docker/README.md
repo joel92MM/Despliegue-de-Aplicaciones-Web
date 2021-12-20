@@ -1,18 +1,14 @@
 
-![](assets/README-6b317474.GIF)
+<img alt="README-0d42f59c.png" src="assets/README-0d42f59c.png" width="" height="" >
+<hr/>
+
 # Índice #
 
 ## 1. Requisitos básicos ##
 
-## 2. ¿Cómo instalar FTP? ##
+## 2. Busquedas de imágenes creadas ##
 
-*  ## 2.1 Instalando el paquete vsftpd  ##
-
-## 3. Verificar el servicio FTP en Ubuntu  ##
-
-## 4. Configurar el servidor FTP ##
-
-## 5. Instalación de un cliente o utilización de un cliente ##
+## 3. Trabajar con la imagen atmoz  ##
 
 
 <hr/>
@@ -21,6 +17,11 @@
 
 - Disponer de una máquina Ubuntu 20.04
 - Internet
+
+**2. Búsquedas de imágenes creadas**
+<p>Podemos consultar las imágenes creadas para la instalación de SFTP, con el comando...</p>
+
+
 
 **2. ¿Cómo instalar FTP?**
 <p>Vamos a instalar el servidor FTP vsFTPd en Ubuntu 20.04 desde los repositorios de la distribución, así que la primera acción será actualizar la información de los repositorios, con el comando...</p>
@@ -143,4 +144,4 @@
 
 <hr/>
 
-Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/Instalacion_Administracion_Servidores_Transferencia_Archivos">enlace</a>
+Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/2ºTrimestre/Instalacion_Administracion_Servidores_Transferencia_Archivos_Docker">enlace</a>

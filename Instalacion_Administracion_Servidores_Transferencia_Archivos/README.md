@@ -1,20 +1,19 @@
 
-<img alt="README-0d42f59c.png" src="assets/README-0d42f59c.png" width="" height="" >
-<hr/>
-
+![](assets/README-6b317474.GIF)
 # Índice #
 
 ## 1. Requisitos básicos ##
 
-## 2. Busquedas de imágenes creadas ##
+## 2. ¿Cómo instalar FTP? ##
 
-## 3. Trabajar con la imagen atmoz  ##
+*  ## 2.1 Instalando el paquete vsftpd  ##
 
-## 4. Verificar la imagen ##
+## 3. Verificar el servicio FTP en Ubuntu  ##
 
-## 5. Configurar el directorio home en la máquina host. ##
+## 4. Configurar el servidor FTP ##
 
-## 6. SFTP Multiusuario ##
+## 5. Instalación de un cliente o utilización de un cliente ##
+
 
 <hr/>
 
@@ -23,12 +22,26 @@
 - Disponer de una máquina Ubuntu 20.04
 - Internet
 
-**2. Búsquedas de imágenes creadas**
-<p>Podemos consultar las imágenes creadas para la instalación de SFTP, con el comando...</p>
+**2. ¿Cómo instalar FTP?**
+<p>Vamos a instalar el servidor FTP vsFTPd en Ubuntu 20.04 desde los repositorios de la distribución, así que la primera acción será actualizar la información de los repositorios, con el comando...</p>
 
+> sudo apt update && apt upgrade
+
+![Captura de pantalla de 2021-12-19 13-47-29](https://user-images.githubusercontent.com/73592097/146677164-4dfcea80-71bd-4bbc-96e5-1921a035916e.png)
 
 ***2.1 Instalando el paquete vsftpd***
 
+<p>Vamos a instalar el paquete ftp con el comando siguiente..</p>
+
+> sudo apt install -y vsftpd
+
+<p>Obtenemos un mensaje similar al siguiente</p>
+
+![1](https://user-images.githubusercontent.com/73592097/146677091-8b6a5cb7-bdae-4214-9b05-93bc209f9d41.png)
+
+<p>Para comprobar el estado del servidor FTP utilizamos el comando..</p>
+
+> sudo systemctl status vsftpd
 
 ![2](https://user-images.githubusercontent.com/73592097/146677092-5e238c07-1ff1-499c-9b3c-af81dc0147dd.png)
 
@@ -130,4 +143,4 @@
 
 <hr/>
 
-Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/2ºTrimestre/Instalacion_Administracion_Servidores_Transferencia_Archivos_Docker">enlace</a>
+Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/Instalacion_Administracion_Servidores_Transferencia_Archivos">enlace</a>
