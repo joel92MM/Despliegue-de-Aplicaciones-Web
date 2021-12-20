@@ -1,6 +1,5 @@
 
 <img alt="README-0d42f59c.png" src="assets/README-0d42f59c.png" width="" height="" >
-<hr/>
 
 # Índice #
 
