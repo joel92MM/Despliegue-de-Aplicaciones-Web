@@ -12,7 +12,7 @@
 
 ## 4. Verificar la imagen ##
 
-- ### 4.1 Configurar el directorio home en la máquina host ###
+*  ### 4.1 Configurar el directorio home en la máquina host ###
 
 ## 5. SFTP Multiusuario##
 
