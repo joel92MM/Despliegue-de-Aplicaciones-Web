@@ -26,23 +26,9 @@
 **2. Búsquedas de imágenes creadas**
 <p>Podemos consultar las imágenes creadas para la instalación de SFTP, con el comando...</p>
 
-> sudo apt update && apt upgrade
-
-![Captura de pantalla de 2021-12-19 13-47-29](https://user-images.githubusercontent.com/73592097/146677164-4dfcea80-71bd-4bbc-96e5-1921a035916e.png)
 
 ***2.1 Instalando el paquete vsftpd***
 
-<p>Vamos a instalar el paquete ftp con el comando siguiente..</p>
-
-> sudo apt install -y vsftpd
-
-<p>Obtenemos un mensaje similar al siguiente</p>
-
-![1](https://user-images.githubusercontent.com/73592097/146677091-8b6a5cb7-bdae-4214-9b05-93bc209f9d41.png)
-
-<p>Para comprobar el estado del servidor FTP utilizamos el comando..</p>
-
-> sudo systemctl status vsftpd
 
 ![2](https://user-images.githubusercontent.com/73592097/146677092-5e238c07-1ff1-499c-9b3c-af81dc0147dd.png)
 
