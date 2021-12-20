@@ -29,12 +29,16 @@
 
 > docker search sftp
 
+![](assets/README-e4379c61.png)
+
 **3. Trabajar con la imagen atmoz**
 <p>Para utilizar la imagen desarrollada por <strong>atmoz</strong>, sobre <strong>ftp</strong> realizamos los siguientes pasos </p>
 
 <p>Ejecutamos la imagen, con el comando...</p>
 
 > docker run --name mysftp -p 2294:22 -d atmoz/sftp admin:admin:::upload
+
+![](assets/README-2c7e4cc1.PNG)
 
 <p>donde cada uno de los parámetros representa:</p>
 
@@ -45,18 +49,24 @@
 
 <p>Para verificar la descarga imagen anterior, lanzamos el siguiente comando...</p>
 
-> sudo apt install -y vsftpd
+> docker ps | grep sftp
 
 <p>Obtenemos un mensaje similar al siguiente</p>
 
-
+![](assets/README-5084353f.PNG)
 
 <p>Podemos realizar la prueba de acceso al servidor FTP. Para ello podemos lanzar los siguientes comandos...</p>
 
 > sudo docker ps
 
+![](assets/README-7f298b54.PNG)
 
-***4.1 Instalando el paquete vsftpd***
+<p>Obtenemos informacion detallada del contenedor, con el siguiete comando...</p>
+
+![](assets/README-b7b2344f.PNG)
+
+
+***4.1 Configurar el directorio home en la maquina host***
 
 <p>Para realizar la confifuración del directorio de home de SFTP hemos de ejecutar el siguiente comando:</p>
 
