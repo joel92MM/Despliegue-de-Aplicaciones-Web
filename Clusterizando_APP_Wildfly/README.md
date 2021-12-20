@@ -1,4 +1,4 @@
-<img alt="README-9a6e350a.png" src="assets/README-9a6e350a.png" width="800px"/>
+<img alt="README-0d42f59c.png" src="assets/README-0d42f59c.png" width="" height="" >
 <br/>
 <hr/>
 
