@@ -354,98 +354,25 @@
 
 <img alt="README-2e4d8e3c.png" src="assets/README-2e4d8e3c.png" width="" height="" >
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>Seleccionamos los permisos para el directorio </p>
+
+<img alt="README-66283f0d.png" src="assets/README-66283f0d.png" width="" height="" >
+
+<p>Nos conectaremos con nuestro localhost, usuario y contraseña</p>
+
+<img alt="README-c293efca.png" src="assets/README-c293efca.png" width="" height="" >
+
+<p>Subiremos un fichero para comprobar la transferencia de archivos </p>
+<p>Se ha subido el archivo</p>
+
+<img alt="README-7a1dda54.png" src="assets/README-7a1dda54.png" width="" height="" >
+
+<img alt="README-992eab25.png" src="assets/README-992eab25.png" width="" height="" >
+
+<p>Verificamos en nuestro subdominio que se a subido correctamente</p>
+
+<img alt="README-e72fbd48.png" src="assets/README-e72fbd48.png" width="" height="" >
+
+<hr/>
+
+Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/2ºTrimestre/ConstruccionServicioEmpresa">enlace</a>
