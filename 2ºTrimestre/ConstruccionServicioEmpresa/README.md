@@ -41,6 +41,8 @@
 
 > chmod -R 755 /var/www/joelmmsystem
 
+<img alt="README-59890652.png" src="assets/README-59890652.png" width="800px"/>
+
 <p>A continuación dentro de la carpeta *joelmmsystem* crearemos la carpeta html que contendrá la pagina principal de nuestro dominio</p>
 
 > mkdir -p /var/www/joelmmsystem/html
@@ -48,9 +50,78 @@
 
 <p>El contenido del index.php será el siguiente: </p>
 
->
+<img alt="README-4bc6dc9b.png" src="assets/README-4bc6dc9b.png" width="" height="" >
 
-<p>Dentro de la carpeta *htmml* crearemos la carpeta *errors* que contendra los archivos para controlar los mensajes de los errores</p>
+<p>Dentro de la carpeta **html** crearemos la carpeta *errors* que contendrá los archivos para controlar los mensajes de los errores</p>
+
+<img alt="README-135ed77f.png" src="assets/README-135ed77f.png" width="" height="" >
+
+<p>Ahora vamos al archivo de configuración</p>
+<p>Localizamos la ruta del archivo sites-available con el siguiente comando</p>
+
+> locate sites-available
+
+<img alt="README-f67bd1d2.png" src="assets/README-f67bd1d2.png" width="" height="" >
+
+<p>Entramos en la ruta </p>
+
+<img alt="README-c20d9257.png" src="assets/README-c20d9257.png" width="" height="">
+
+<br/>
+<br/>
+
+- ***2.1 Configurar dominio y puertos***
+
+<p>Crearemos nuestro archvo de configuracion inicial, copiado del original de apache, cuyo nombre sera *joelmmsystem.conf*</p>
+
+<img alt="README-c754c604.png" src="assets/README-c754c604.png" width="" height="" >
+
+<p>Entramos en el archivo de configuracion creado anteriormente con el comando...</p>
+
+> sudo nano joelmmsystem.conf
+
+<p>Configuramos lo siguiente: </p>
+
+> NombreServidor: joelmmsystem
+> AliasServidor: www.joelmmsystem.com
+> DocumentRoot /var/wwww/joelmmsystem/html
+
+<p>Directorio de la carpetas y permisos</p>
+
+>  <Directory /var/www/joelmmsystem/html> <br/>
+        Options Indexes FollowSymLinks<br/>
+        AllowOverride None<br/>
+        Require all granted<br/>
+>    /Directory> <br/>
+
+<p>Archivo de errores</p>
+
+> ErrorDocument 404 /errors/error404.html
+
+
+<img alt="README-75945b21.png" src="assets/README-75945b21.png" width="" height="" >
+<img alt="README-7b21b6b9.png" src="assets/README-7b21b6b9.png" width="" height="" >
+
+<p>Guardamos la configuración CTRL+O Y CTRL+X</p>
+
+<p>Habilitamos la configuracion con el comando </p>
+
+> sudo a2ensite joelmmsystem.conf
+
+<p>Ahora habilitamos el puerto, entramos en la carpeta hosts, con el comando..</p>
+
+>sudo nano /etc/hosts/
+
+
+<img alt="README-278dfc13.png" src="assets/README-278dfc13.png" width="" height="" >
+
+<p>Reiniciamos nuestro servidor apache con el comando</p>
+
+> sudo systemctl reload apache2.service
+
+<p>Ahora en nuestro navegador ponemos nuestro dominio y se nos mostrara una pagina similar a la siguiente</p>
+
+<img alt="README-0b4125dc.png" src="assets/README-0b4125dc.png" width="" height="" >
 
 <p></p>
 <p></p>
