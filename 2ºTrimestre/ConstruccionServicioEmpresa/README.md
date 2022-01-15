@@ -50,18 +50,18 @@
 
 <p>El contenido del index.php será el siguiente: </p>
 
-<img alt="README-4bc6dc9b.png" src="assets/README-4bc6dc9b.png" width="" height="" >
+<img alt="README-4bc6dc9b.png" src="assets/README-4bc6dc9b.png" width="800px"/>
 
 <p>Dentro de la carpeta **html** crearemos la carpeta *errors* que contendrá los archivos para controlar los mensajes de los errores</p>
 
-<img alt="README-135ed77f.png" src="assets/README-135ed77f.png" width="" height="" >
+<img alt="README-135ed77f.png" src="assets/README-135ed77f.png" width="800px"/>
 
 <p>Ahora vamos al archivo de configuración</p>
 <p>Localizamos la ruta del archivo sites-available con el siguiente comando</p>
 
 > locate sites-available
 
-<img alt="README-f67bd1d2.png" src="assets/README-f67bd1d2.png" width="" height="" >
+<img alt="README-f67bd1d2.png" src="assets/README-f67bd1d2.png" width="800px"/>
 
 <p>Entramos en la ruta </p>
 
@@ -74,7 +74,7 @@
 
 <p>Crearemos nuestro archvo de configuracion inicial, copiado del original de apache, cuyo nombre sera *joelmmsystem.conf*</p>
 
-<img alt="README-c754c604.png" src="assets/README-c754c604.png" width="" height="" >
+<img alt="README-c754c604.png" src="assets/README-c754c604.png" width="800px"/>
 
 <p>Entramos en el archivo de configuracion creado anteriormente con el comando...</p>
 
@@ -99,8 +99,8 @@
 > ErrorDocument 404 /errors/error404.html
 
 
-<img alt="README-75945b21.png" src="assets/README-75945b21.png" width="" height="" >
-<img alt="README-7b21b6b9.png" src="assets/README-7b21b6b9.png" width="" height="" >
+<img alt="README-75945b21.png" src="assets/README-75945b21.png" width="800px"/>
+<img alt="README-7b21b6b9.png" src="assets/README-7b21b6b9.png" width="800px"/>
 
 <p>Guardamos la configuración CTRL+O Y CTRL+X</p>
 
@@ -113,7 +113,7 @@
 >sudo nano /etc/hosts/
 
 
-<img alt="README-278dfc13.png" src="assets/README-278dfc13.png" width="" height="" >
+<img alt="README-278dfc13.png" src="assets/README-278dfc13.png" width="800px"/>
 
 <p>Reiniciamos nuestro servidor apache con el comando</p>
 
@@ -121,13 +121,11 @@
 
 <p>Ahora en nuestro navegador ponemos nuestro dominio y se nos mostrara una pagina similar a la siguiente</p>
 
-<img alt="README-0b4125dc.png" src="assets/README-0b4125dc.png" width="" height="" >
+<img alt="README-0b4125dc.png" src="assets/README-0b4125dc.png" width="800px"/>
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>Y si introducimos una direccion erronea, se nos mostrara un mensaje de error personalizado</p>
+
+<img alt="README-f806c358.png" src="assets/README-f806c358.png" width="800px"/>
 
 **3. Crear subdominio**
 
