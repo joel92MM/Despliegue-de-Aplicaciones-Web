@@ -41,9 +41,17 @@
 
 > chmod -R 755 /var/www/joelmmsystem
 
-<p></p>
-<p></p>
-<p></p>
+<p>A continuación dentro de la carpeta *joelmmsystem* crearemos la carpeta html que contendrá la pagina principal de nuestro dominio</p>
+
+> mkdir -p /var/www/joelmmsystem/html
+> sudo nano /var/www/joelmmsystem/html/index.php
+
+<p>El contenido del index.php será el siguiente: </p>
+
+>
+
+<p>Dentro de la carpeta *htmml* crearemos la carpeta *errors* que contendra los archivos para controlar los mensajes de los errores</p>
+
 <p></p>
 <p></p>
 <p></p>
