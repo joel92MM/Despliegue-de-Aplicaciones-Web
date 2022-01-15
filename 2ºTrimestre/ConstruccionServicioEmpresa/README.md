@@ -20,6 +20,7 @@
 ## 5. Instalar MYSQL ##
 
 ## 6. Instalar PHPMYADMIN ##
+- ### 6.1 Configurar phpmyadmin  ###
 
 <hr/>
 
