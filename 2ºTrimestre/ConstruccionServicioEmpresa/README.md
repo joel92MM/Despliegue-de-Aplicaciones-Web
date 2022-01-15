@@ -45,7 +45,7 @@
 
 <p>A continuación dentro de la carpeta *joelmmsystem* crearemos la carpeta html que contendrá la pagina principal de nuestro dominio</p>
 
-> mkdir -p /var/www/joelmmsystem/html
+> mkdir -p /var/www/joelmmsystem/html <br/>
 > sudo nano /var/www/joelmmsystem/html/index.php
 
 <p>El contenido del index.php será el siguiente: </p>
@@ -82,9 +82,9 @@
 
 <p>Configuramos lo siguiente: </p>
 
-> NombreServidor: joelmmsystem
-> AliasServidor: www.joelmmsystem.com
-> DocumentRoot /var/wwww/joelmmsystem/html
+> NombreServidor: joelmmsystem <br/>
+> AliasServidor: www.joelmmsystem.com <br/>
+> DocumentRoot /var/wwww/joelmmsystem/html <br/>
 
 <p>Directorio de la carpetas y permisos</p>
 
@@ -148,17 +148,62 @@
 <p></p>
 <p></p>
 <p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
 
 **5. Instalar MYSQL**
 
+<p>Antes de instalar mysql, actualizaremos los repositorios de nuestro sistema con el comando..</p>
+
+> sudo apt update && apt upgrade
+
+<p>Ahora procederemos a instalar mysql con el comando..</p>
+
+> sudo apt-get install mysql-server
+
+<img alt="README-75ab7cb3.png" src="assets/README-75ab7cb3.png" width="" height="" >
+
+<p>Presionamos la tecla S y continuamos </p>
+
+<img alt="README-5dafa535.png" src="assets/README-5dafa535.png" width="" height="" >
+
+<p>Tardara unos minutos </p>+
+
+<img alt="README-d12ae188.png" src="assets/README-d12ae188.png" width="" height="" >
+
+<p>Ahora ejecutaremos un script simple de seguridad que nos permite eliminar algunas configuraciones peligrosas y bloquear un poco el acceso a nuestro sistema de BBDD, con el siguiente comando...</p>
+
+> sudo mysql_secure_installation
+
+<img alt="README-affc3fa0.png" src="assets/README-affc3fa0.png" width="" height="" >
+
+<p>A continuación se muestran los pasos a seguir: </p>
+
+<p>Presionamos la tecla n en cada opción..</p>
+
+<img alt="README-333400ae.png" src="assets/README-333400ae.png" width="" height="" >
+
+<p>Introduciremos la nueva contraseña, en nuestro caso sera 123456789</p>
+
+<img alt="README-9722cd87.png" src="assets/README-9722cd87.png" width="" height="" >
+
+<p>Seguimos con la instalación</p>
+
+<img alt="README-0f2b6d8f.png" src="assets/README-0f2b6d8f.png" width="" height="" >
 <p></p>
+<img alt="README-d51b0605.png" src="assets/README-d51b0605.png" width="" height="" >
 <p></p>
+<img alt="README-fb89fc00.png" src="assets/README-fb89fc00.png" width="" height="" >
 <p></p>
-<p></p>
+<img alt="README-c821100e.png" src="assets/README-c821100e.png" width="" height="" >
+
+<p>Si hemos realizado los pasos correctamente se nos mostrara un mensaje similar al siguiente</p>
+
+<img alt="README-bdcb40c1.png" src="assets/README-bdcb40c1.png" width="" height="" >
+
+
+
+
+
+
 <p></p>
 <p></p>
 <p></p>
@@ -168,6 +213,116 @@
 
 **6. Instalar PHPMYADMIN**
 
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
 <p></p>
 <p></p>
 <p></p>
