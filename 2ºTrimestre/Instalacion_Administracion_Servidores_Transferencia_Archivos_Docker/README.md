@@ -12,7 +12,7 @@
 
 ## 4. Verificar la imagen ##
 
-- ### 4.1 Configurar el directorio home en la máquina host ###
+*  ### 4.1 Configurar el directorio home en la máquina host ###
 
 ## 5. SFTP Multiusuario##
 
@@ -68,10 +68,11 @@
 
 ***4.1 Configurar el directorio home en la maquina host***
 
-<p>Para realizar la confifuración del directorio de home de SFTP hemos de ejecutar el siguiente comando:</p>
+<p>Para realizar la configuración del directorio de home de SFTP hemos de ejecutar el siguiente comando:</p>
 
 >   docker run --name mysftp2 -v /host/upload:/home/admin/upload --privileged=true -p 2295:22 -d atmoz/sftp admin:admin:1001
 
+![](assets/README-5a1dc4f9.PNG)
 
 * v / host / upload: / home / admin / upload. Donde el frente de los dos puntos es el directorio del host, la parte posterior se monta en el directorio en el contenedor, si el directorio local / host / uplaod no existe, se creará automáticamente.
 
@@ -80,6 +81,40 @@
 * --name mysftp2. El nombre también se cambia. Debido a que el nombre no se puede repetir, el puerto también se repite, el contenedor no se iniciará.
 
 ## 5. SFTP Multiusuario ##
+
+<p>Ahora configuramos los usuarios para sftp donde...</p>
+
+* Creemos usuarios en el contenedor y asignamos permisos.
+* Escribimos archivos de usuario en el host y los montamos en el contenedor.
+
+<p>Utilizaremos el comando..</p>
+
+> docker run --name mysftp3 -v /host/users.conf:/etc/sftp/users.conf:ro -v /home/sftp:/home --privileged=true -p 2296:22 -d atmoz/sftp
+
+![](assets/README-b8a6284f.PNG)
+
+* -v /host/users.conf:/etc/sftp/users.conf:ro mapea el /host/users.conf local al /etc/sftp/users.conf del contenedor, y es de solo lectura en el contenedor.
+* -v / home / sftp: / home asigna el directorio local / home / sftp al contenedor / home para almacenar los archivos cargados.
+
+<p>Listamos los contenedores</p>
+
+![](assets/README-e27b05fb.PNG)
+
+<p>Crearemos el archivo /host/users.conf en el directorio local, con el comando..</p>
+
+>   nano /host/users.conf
+
+<p>Introduciendo el siguiente contenido..</p>
+<p>
+*  xiaoming:123:1001:100<br/>
+*  goudan : abc:1002:100<br/>
+*  erzhu:xyz:1003:100<br/>
+</p>
+
+![](assets/README-c4e70a16.PNG)
+
+
+![](assets/README-555a55eb.PNG)
 
 <hr/>
 
