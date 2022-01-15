@@ -19,8 +19,9 @@
 
 ## 5. Instalar MYSQL ##
 
-## 6. Instalar PHPMYADMIN ##
-- ### 6.1 Configurar phpmyadmin  ###
+## 6. Instalación y configuración de PHPMYADMIN ##
+
+## 7. Instalación y configuración de SFTP##
 
 <hr/>
 
@@ -129,16 +130,21 @@
 
 **3. Crear subdominio**
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>Creamos una carpeta dentro de joelmmsystem</p>
+
+<img alt="README-3f6cae94.png" src="assets/README-3f6cae94.png" width="" height="" >
+
+<p>Estructura de carpetas de joelmmsystem</p>
+
+<img alt="README-1d34846d.png" src="assets/README-1d34846d.png" width="" height="" >
+
+<p>Posteriormente vamos al archivo de configuración y lo editamos para que acceda a la carpeta </p>
+
+<img alt="README-2be013d6.png" src="assets/README-2be013d6.png" width="" height="" >
+
+<p>Finalmente ya tenemos la carpeta configurada como subdominio</p>
+
+<img alt="README-168b3c21.png" src="assets/README-168b3c21.png" width="" height="" >
 
 
 **4. Instalar MYSQL**
@@ -192,9 +198,6 @@
 <img alt="README-bdcb40c1.png" src="assets/README-bdcb40c1.png" width="" height="" >
 
 
-<p></p>
-<p></p>
-
 **5. Instalar PHP**
 
 <p>Incluimos algunos paquetes de ayuda, para que el codigo PHP se pueda ejecutar en el servidor Apache y hablar con nuestra base de datos MYSQL, con el siguiente comando..</p>
@@ -223,7 +226,7 @@
 
 <img alt="README-44737e6c.png" src="assets/README-44737e6c.png" width="" height="" >
 
-**6. Instalar PHPMYADMIN**
+**6. Instalación y configuración de PHPMYADMIN**
 
 <p>Nuevamente actualizaremos los repositorios de nuestro sistema con el comando..</p>
 
@@ -308,13 +311,49 @@
 
 <img alt="README-dbb5664e.png" src="assets/README-dbb5664e.png" width="" height="" >
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+**7. Instalación y configuración de SFTP**
+
+<p>Actualizaremos los repositorios de ubuntu</p>
+
+> sudo apt update
+
+<p>Ahora procederemos a instalar SFTP con el comando...</p>
+
+> sudo apt install vsftpd
+
+<img alt="README-451af2af.png" src="assets/README-451af2af.png" width="" height="" >
+
+<p>Nos crearemos un usuario con el comando...</p>
+
+> sudo adduser --shell /bin/false sftp
+
+<img alt="README-83a8a8ab.png" src="assets/README-83a8a8ab.png" width="" height="" >
+
+<p>Intro en todas las opciones, dejando los campos vacíos</p>
+
+<img alt="README-0212daa9.png" src="assets/README-0212daa9.png" width="" height="" >
+
+<p>El usuario creado lo ponemos como propietario de la carpeta sftp de nuestro dominio con el siguiente comando</p>
+
+> sudo chown sftp:sftp /var/www/joelmmsystem/subdomine
+
+<img alt="README-eb8fb667.png" src="assets/README-eb8fb667.png" width="" height="" >
+
+<p>Ponemos la carpeta de ese usuario como home con el siguiente comando </p>
+
+<img alt="README-b6973bcc.png" src="assets/README-b6973bcc.png" width="" height="" >
+
+<p>Buscamos el fichero vsftpd.conf y accedemos al archivo con los comandos....</p>
+
+> locate vsftpd.conf <br/>
+> sudo nano .....
+
+<img alt="README-a3d81e4a.png" src="assets/README-a3d81e4a.png" width="" height="" >
+
+<p>Cambiamos la linea *pam_service_name* poniendo como resultado *ftp* como se muestra en la imagen</p>
+
+<img alt="README-2e4d8e3c.png" src="assets/README-2e4d8e3c.png" width="" height="" >
+
 <p></p>
 <p></p>
 <p></p>
