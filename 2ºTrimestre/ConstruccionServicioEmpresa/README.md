@@ -140,16 +140,8 @@
 <p></p>
 <p></p>
 
-**4. Instalar PHP**
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-
-**5. Instalar MYSQL**
+**4. Instalar MYSQL**
 
 <p>Antes de instalar mysql, actualizaremos los repositorios de nuestro sistema con el comando..</p>
 
@@ -200,37 +192,122 @@
 <img alt="README-bdcb40c1.png" src="assets/README-bdcb40c1.png" width="" height="" >
 
 
+<p></p>
+<p></p>
 
+**5. Instalar PHP**
 
+<p>Incluimos algunos paquetes de ayuda, para que el codigo PHP se pueda ejecutar en el servidor Apache y hablar con nuestra base de datos MYSQL, con el siguiente comando..</p>
 
+> sudo apt-get install php libapache2-mod-php php-mysql
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<img alt="README-5e2c5f7f.png" src="assets/README-5e2c5f7f.png" width="" height="" >
+
+<p>Buscamos y editamos el archivo dir.conf para ello usamos el siguiente comando...</p>
+
+> locate dir.conf
+
+<img alt="README-614b0a74.png" src="assets/README-614b0a74.png" width="" height="" >
+
+<p>Entramos en la ruta para modificar el archivo, queriendo que apache busque primero archivos .php, se vera de forma similar a la siguiente imagen</p>
+
+<img alt="README-454cbcdc.png" src="assets/README-454cbcdc.png" width="" height="" >
+<br/><br/>
+<img alt="README-d0a5a105.png" src="assets/README-d0a5a105.png" width="" height="" >
+
+<p>Luego recargamos la configuración de apache con el siguiente comando..</p>
+
+> sudo systemctl reload apache2.service
+
+<p>Comprobamos que se muestra en nuestro navegador</p>
+
+<img alt="README-44737e6c.png" src="assets/README-44737e6c.png" width="" height="" >
 
 **6. Instalar PHPMYADMIN**
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>Nuevamente actualizaremos los repositorios de nuestro sistema con el comando..</p>
+
+> sudo apt-get update
+
+<p>Ahora descargaremos phpmyadmin con el siguiente comando, el cual nos guiara por unos pasos que detallo a continuacion, el comando es..</p>
+
+> sudo apt-get install phpmyadmin php-mbstring
+
+<img alt="README-2e027e3f.png" src="assets/README-2e027e3f.png" width="" height="" >
+
+<p>En la primera pregunta pulsamos la tecla Y, posteriormente se nos mostrara una ventana como la de la imagen</p>
+
+<img alt="README-115d181b.png" src="assets/README-115d181b.png" width="" height="" >
+
+<p>Seleccionamos la primera opcion con la tecla barra espaciadora y seguimos</p>
+
+<img alt="README-115d181b.png" src="assets/README-115d181b.png" width="" height="" >
+
+<p>Se nos preguntara si queremos configurar la base de datos para phpmyadmin pulsamos que si y continuamos</p>
+
+<img alt="README-a9e177b3.png" src="assets/README-a9e177b3.png" width="" height="" >
+
+<p>Ingresamos la nueva contraseña para mysql</p>
+
+<img alt="README-57d38e48.png" src="assets/README-57d38e48.png" width="" height="" >
+
+<p>Confirmamos contraseña anterior</p>
+
+<img alt="README-a056a3f6.png" src="assets/README-a056a3f6.png" width="" height="" >
+
+<p>Ahora habilitamos las extensiones de php con los siguientes comandos..</p>
+
+<img alt="README-4d28915b.png" src="assets/README-4d28915b.png" width="" height="" >
+<br/><br/>
+<img alt="README-1804f210.png" src="assets/README-1804f210.png" width="" height="" >
+
+<p>Reiniciamos nuestro servidor apache</p>
+
+<p>Iremos a nuestro navegador y entramos en phpmyadmin, ingresamos con usuario root y nuestra contraseña y nos mostrara un mensaje de error como el siguiente</p>
+
+<img alt="README-7cfc29df.png" src="assets/README-7cfc29df.png" width="" height="" >
+
+<p>La solución son los siguientes pasos</p>
+
+<img alt="README-a098d5c2.png" src="assets/README-a098d5c2.png" width="" height="" >
+<br/>
+<br/>
+<img alt="README-99cb7af3.png" src="assets/README-99cb7af3.png" width="" height="" >
+<br/>
+<br/>
+<img alt="README-50478142.png" src="assets/README-50478142.png" width="" height="" >
+<br/>
+<br/>
+<p>Finalmente volveremos a introducir el usuario y contraseña y entraremos en phpmyadmin</p>
+
+<img alt="README-87a44fbe.png" src="assets/README-87a44fbe.png" width="" height="" >
+
+
+<p>Una vez dentro, procederemos a crear un nuevo usuario, nos vamos a la pestaña cuenta de usuario, bajando nos encontraremos con Agregar cuenta de usuario</p>
+
+<img alt="README-4dc2d8a2.png" src="assets/README-4dc2d8a2.png" width="" height="" >
+
+<p>Agregaremos al nuevo usuario, con su contraseña y los privilegios globales, y pulsamos en continuar..</p>
+
+<img alt="README-d45d462a.png" src="assets/README-d45d462a.png" width="" height="" >
+<img alt="README-f9e4c752.png" src="assets/README-f9e4c752.png" width="" height="" >
+
+<p>El resultado es el siguiente</p>
+
+<img alt="README-53ab8df3.png" src="assets/README-53ab8df3.png" width="" height="" >
+
+<p>Como vemos en cuentas de usuario, podemos localizar al usuario nuevo creado</p>
+
+<img alt="README-31384209.png" src="assets/README-31384209.png" width="" height="" >
+
+<p>Ahora probamos a entrar con la nueva cuenta de usuario</p>
+
+<img alt="README-bb7bb9f5.png" src="assets/README-bb7bb9f5.png" width="" height="" >
+
+<p>Vemos el correcto funcionamiento</p>
+
+<img alt="README-dbb5664e.png" src="assets/README-dbb5664e.png" width="" height="" >
+
 <p></p>
 <p></p>
 <p></p>
