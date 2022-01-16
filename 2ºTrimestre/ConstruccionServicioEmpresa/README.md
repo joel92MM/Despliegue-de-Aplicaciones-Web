@@ -21,7 +21,7 @@
 
 ## 6. Instalación y configuración de PHPMYADMIN ##
 
-## 7. Instalación y configuración de SFTP##
+## 7. Instalación y configuración de SFTP ##
 
 <hr/>
 
