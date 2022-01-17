@@ -5,13 +5,15 @@
 
 ## 1. Requisitos básicos ##
 
-## 2. Instalar Jenkins ##
+## 2. Creación del dominio ##
 
-## 3. Iniciar Jenkins ##
+## 3. Instalar Jenkins ##
 
-## 4. Abrir el Firewall ##
+## 4. Iniciar Jenkins ##
 
-## 5. Configurar Jenkins ##
+## 5. Abrir el Firewall ##
+
+## 6. Configurar Jenkins ##
 
 
 <hr/>
@@ -22,7 +24,22 @@
 - Internet
 - Open JDK 11
 
-**2. Instalar Jenkins**
+**2. Creación del dominio**
+<p>Nos situamos en la carpeta de apache sites-available</p>
+
+<p>Copiamos la carpeta de original apache y creamos una nueva </p>
+
+<p>Configuramos la carpeta nueva</p>
+
+<p>Habilitamos el sitio</p>
+
+<p>Reiniciamos apache</p>
+
+
+
+
+
+**3. Instalar Jenkins**
 
 <p>Primero, agregamos la clave del repositorio al sistema:</p>
 
@@ -56,11 +73,28 @@
 <img alt="README-512e2e9b.png" src="assets/README-512e2e9b.png" width="" height="" >
 
 <p>Posteriormente iniciamos el servidor de Jenkins</p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+
+**4 . Iniciar Jenkins**
+
+<p>Iniciamos Jenkins con el siguiente comando...</p>
+
+> sudo systemctl start jenkins
+
+<p>Verificamos que Jenkis se haya iniciado correctamente con el comando..</p>
+
+> sudo systemctl status jenkins
+
+<p>Resultado </p>
+
+<img alt="README-9d05db79.png" src="assets/README-9d05db79.png" width="" height="" >
+
+**5 . Abrir el Firewall**
+
+<p>Configuraos el Firewall UFW, con el comando...</p>
+<p>Si esta desactivado ejecutaremos los siguientes comandos..</p>
+
+> sudo ufw allow OpenSSH
+> sudo ufw enable
 <p></p>
 <p></p>
 <p></p>
