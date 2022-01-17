@@ -26,10 +26,25 @@
 
 <p>Primero, agregamos la clave del repositorio al sistema:</p>
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>Unaa vez agregada la clave, el sistema devolvera como resultado ok</p>
+
+
+>   wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add
+
+<p>A continuación, vamos a anexar la dirección del repositorio de paquetes de Debian a sources.list del servidor:
+
+</p>
+
+>  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+<p>Una vez que se hayan ingresado ambos comandos, ejecutaremos update de manera que apt utilice el nuevo repositorio. REALIZA ESTE PASO SÓLO SI HAY MUCHO TIEMPO QUE NO ACTUALIZAS EL SISTEMA, O TIENES PROBLEMAS EN EL SIGUIENTE PASO.</p>
+
+> sudo apt update
+
+<p>Ahora instalaremos Jenkis y sus dependencias, con el comando </p>
+
+> sudo apt install Jenkins
+
 <p></p>
 <p></p>
 <p></p>
