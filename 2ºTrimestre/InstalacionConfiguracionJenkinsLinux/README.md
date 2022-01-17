@@ -27,16 +27,23 @@
 **2. Creación del dominio**
 <p>Nos situamos en la carpeta de apache sites-available</p>
 
+<img alt="README-96d09888.png" src="assets/README-96d09888.png" width="" height="" >
+
 <p>Copiamos la carpeta de original apache y creamos una nueva </p>
+
+<img alt="README-64009b62.png" src="assets/README-64009b62.png" width="" height="" >
 
 <p>Configuramos la carpeta nueva</p>
 
+<img alt="README-5b8bc9b0.png" src="assets/README-5b8bc9b0.png" width="" height="" >
+
 <p>Habilitamos el sitio</p>
+
+<img alt="README-5913490e.png" src="assets/README-5913490e.png" width="" height="" >
 
 <p>Reiniciamos apache</p>
 
-
-
+<img alt="README-995ac3cb.png" src="assets/README-995ac3cb.png" width="" height="" >
 
 
 **3. Instalar Jenkins**
@@ -80,6 +87,8 @@
 
 > sudo systemctl start jenkins
 
+<img alt="README-7e507351.png" src="assets/README-7e507351.png" width="" height="" >
+
 <p>Verificamos que Jenkis se haya iniciado correctamente con el comando..</p>
 
 > sudo systemctl status jenkins
@@ -90,13 +99,28 @@
 
 **5 . Abrir el Firewall**
 
-<p>Configuraos el Firewall UFW, con el comando...</p>
+<p>Configuramos el Firewall UFW, con el comando...</p>
+
+> sudo ufw allow 8080
+
+<img alt="README-a21f23e4.png" src="assets/README-a21f23e4.png" width="" height="" >
+
 <p>Si esta desactivado ejecutaremos los siguientes comandos..</p>
 
-> sudo ufw allow OpenSSH
+> sudo ufw allow OpenSSH<br/>
 > sudo ufw enable
-<p></p>
-<p></p>
+
+<p>Compruebe el estado de ufw para confirmar las nuevas reglas, con el comando</p>
+
+> sudo ufw status
+
+<p>Resultado</p>
+
+<img alt="README-48c68c3e.png" src="assets/README-48c68c3e.png" width="" height="" >
+
+**6. Configurar Jenkins**
+
+
 <p></p>
 <p></p>
 <p></p>
