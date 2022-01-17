@@ -45,7 +45,7 @@
 
 > sudo apt install Jenkins
 
-<p></p>
+<p>Posteriormente iniciamos el servidor de Jenkins</p>
 <p></p>
 <p></p>
 <p></p>
