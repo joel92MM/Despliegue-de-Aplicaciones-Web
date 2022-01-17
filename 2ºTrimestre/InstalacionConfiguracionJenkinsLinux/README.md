@@ -121,6 +121,14 @@
 **6. Configurar Jenkins**
 
 
+<p>En el navegador insertamos nuestro dominio y puerto para configurar Jenkins, deberia ver una imagen como la siguiente..</p>
+<p>Para mostrar la contraseña utilizaremos el siguiente comando..</p>
+
+> sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+<p>Copiamos la contraseña alfanumérica de 32 caracteres de la terminal, péguela en el campo Administrator password y luego haga clic en Continue.</p>
+<p>Se nos mostrara una ventana similar</p>
+<p>Haremos clic en la opción Install suggested plugins (Instalar los complementos sugeridos), que iniciará de inmediato el proceso de instalación.</p>
 <p></p>
 <p></p>
 <p></p>
@@ -131,8 +139,7 @@
 <p></p>
 <p></p>
 <p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+
+<hr/>
+
+Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/2ºTrimestre/InstalacionConfiguracionJenkinsLinux">enlace</a>
