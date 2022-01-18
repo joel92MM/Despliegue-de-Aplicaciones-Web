@@ -1,4 +1,4 @@
-<img alt="README-1eac2bfe.png" src="assets/README-1eac2bfe.png" width="" height="" >
+<img alt="README-8d1790bc.png" src="assets/README-8d1790bc.png" width="" height="" >
 <hr/>
 
 # Índice #
@@ -169,4 +169,4 @@
 
 <hr/>
 
-Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/2ºTrimestre/InstalacionConfiguracionJenkinsLinuxDocker">enlace</a>
+Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/2ºTrimestre/InstalacionConfiguracionJenkinsLinux">enlace</a>
