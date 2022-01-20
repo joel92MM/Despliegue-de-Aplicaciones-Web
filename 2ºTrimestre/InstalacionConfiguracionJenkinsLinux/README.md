@@ -1,4 +1,4 @@
-<img alt="README-1eac2bfe.png" src="assets/README-1eac2bfe.png" width="" height="" >
+<img alt="README-8d1790bc.png" src="assets/README-8d1790bc.png" width="" height="" >
 <hr/>
 
 # Índice #
@@ -7,38 +7,39 @@
 
 ## 2. Creación del dominio ##
 
-## 3. Instalación de  Jenkins en Docker ##
+## 3. Instalar Jenkins ##
 
-## 4. Instalación de Jenkins a través de Docker y Docker-Compose ##
+## 4. Iniciar Jenkins ##
 
-- ### 4.1 Dockerfile ###
-- ### 4.2 Plugins.txt ###
-- ### 4.3 Docker-Compose###
-- ### 4.4 Construcción de la imagen###
+## 5. Abrir el Firewall ##
+
+## 6. Configurar Jenkins ##
 
 
 <hr/>
 
 **1. Requisitos básicos**
 
-- <p>Tener docker instalado</p>
-- <p>Tener docker-compose instalado</p>
+- Disponer de una máquina Ubuntu 20.04
+- Internet
+- Open JDK 11
 
 **2. Creación del dominio**
 <p>Nos situamos en la carpeta de apache sites-available</p>
 
 <img alt="README-96d09888.png" src="assets/README-96d09888.png" width="800px"/>
 
-<p>Copiamos la carpeta de la practica anterior *joelic.conf* y en su lugar creamos jekins.joel.conf</p>
+<p>Copiamos la carpeta de original apache y creamos una nueva </p>
 
-<img alt="README-f0b244db.png" src="assets/README-f0b244db.png" width="800px"/>
+<img alt="README-64009b62.png" src="assets/README-64009b62.png" width="800px"/>
 
 <p>Configuramos la carpeta nueva</p>
 
-<img alt="README-750c374c.png" src="assets/README-750c374c.png" width="800px"/>
+<img alt="README-5b8bc9b0.png" src="assets/README-5b8bc9b0.png" width="800px"/>
 
 <p>Habilitamos el sitio</p>
-<img alt="README-97dd9aa7.png" src="assets/README-97dd9aa7.png" width="800px"/>
+
+<img alt="README-5913490e.png" src="assets/README-5913490e.png" width="800px"/>
 
 <p>Reiniciamos apache</p>
 
@@ -46,119 +47,126 @@
 
 <p>Añadimos el dominio en /etc/hosts</p>
 
-<img alt="README-6e9dc1af.png" src="assets/README-6e9dc1af.png" width="800px"/>
+<img alt="README-da0f2282.png" src="assets/README-da0f2282.png" width="800px"/>
+
+**3. Instalar Jenkins**
+
+<p>Primero, agregamos la clave del repositorio al sistema:</p>
+
+<p>Unaa vez agregada la clave, el sistema devolvera como resultado ok</p>
 
 
-**3. Instalación de Jenkins en Docker**
+>   wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add
 
-<Antes de esto eliminamos todos contenedores,imagenes y volumnes en docker>
+<img alt="README-24d7e545.png" src="assets/README-24d7e545.png" width="800px"/>
 
-<p>Nos dirigimos a <a href="">https://hub.docker.com/</a> y buscamos la imagen oficial de jenkins </p>
+<p>A continuación, vamos a anexar la dirección del repositorio de paquetes de Debian a sources.list del servidor:
 
-<p>Descargamos la imagen de jenkins para docker con el siguiente comando...</p>
-
->  docker pull jenkins/jenkins:lts
-
-<img alt="README-7c50b95d.png" src="assets/README-7c50b95d.png" width="800px"/>
-
-<p>Verificamos que la imagen se ha descargado corrrectamente con el siguiente comando...</p>
-
->  docker images
-
-<img alt="README-842c1dbd.png" src="assets/README-842c1dbd.png" width="800px"/>
-
-<p>Ahora ejecutamos jenkins como contenedor Docker exponiendolo en el puerto 8080 del ordenador local. Verificamos nuestro /your/home:/ con el comando </p>
-
-> docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins/jenkins:lts
-
-<img alt="README-ebff2a3b.png" src="assets/README-ebff2a3b.png" width="800px"/>
-
-<p>Si nos muestra el mensaje de error anterior hacemos lo siguiente</p>
-
-<p>Listamos los puertos activos y vemos quien los esta ocupando con el siguiente comando de la imagen y luego eliminamos el servicio de ese puerto </p>
-
-<img alt="README-817c5d16.png" src="assets/README-817c5d16.png" width="800px"/>
-
-<p>Volvemos a lanzar el comando anterior</p>
-
-<img alt="README-0194b227.png" src="assets/README-0194b227.png" width="800px"/>
-
-<p>Se genera una contraseña que debemos copiar</p>
-
-<img alt="README-eefd7947.png" src="assets/README-eefd7947.png" width="800px"/>
-
-<p>Verifica que puedas ingresar al contenedor a través del navegador web de tu preferencia.
 </p>
 
-<img alt="README-a7440615.png" src="assets/README-a7440615.png" width="800px"/>
-<p>Lo config</p>
+>  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 
-**4. Requisitos básicos**
 
-<p>Creamos una carpeta que va a tener los ficheros de configuración de jenkins</p>
+<img alt="README-69daed37.png" src="assets/README-69daed37.png" width="800px"/>
 
-<img alt="README-6f95665f.png" src="assets/README-6f95665f.png" width=""/>
+
+<p>Una vez que se hayan ingresado ambos comandos, ejecutaremos update de manera que apt utilice el nuevo repositorio. REALIZA ESTE PASO SÓLO SI HAY MUCHO TIEMPO QUE NO ACTUALIZAS EL SISTEMA, O TIENES PROBLEMAS EN EL SIGUIENTE PASO.</p>
+
+> sudo apt update
+
+<img alt="README-61242d30.png" src="assets/README-61242d30.png" width="800px"/>
+
+<p>Ahora instalaremos Jenkis y sus dependencias, con el comando </p>
+
+> sudo apt install Jenkins
+
+<img alt="README-512e2e9b.png" src="assets/README-512e2e9b.png" width="800px"/>
+
+<p>Posteriormente iniciamos el servidor de Jenkins</p>
+
+**4 . Iniciar Jenkins**
+
+<p>Iniciamos Jenkins con el siguiente comando...</p>
+
+> sudo systemctl start jenkins
+
+<img alt="README-7e507351.png" src="assets/README-7e507351.png" width="800px"/>
+
+<p>Verificamos que Jenkis se haya iniciado correctamente con el comando..</p>
+
+> sudo systemctl status jenkins
+
+<p>Resultado </p>
+
+<img alt="README-9d05db79.png" src="assets/README-9d05db79.png" width="800px"/>
+
+**5 . Abrir el Firewall**
+
+<p>Configuramos el Firewall UFW, con el comando...</p>
+
+> sudo ufw allow 8080
+
+<img alt="README-a21f23e4.png" src="assets/README-a21f23e4.png" width="800px"/>
+
+<p>Si esta desactivado ejecutaremos los siguientes comandos..</p>
+
+> sudo ufw allow OpenSSH<br/>
+> sudo ufw enable
+
+<p>Compruebe el estado de ufw para confirmar las nuevas reglas, con el comando</p>
+
+> sudo ufw status
+
+<p>Resultado</p>
+
+<img alt="README-48c68c3e.png" src="assets/README-48c68c3e.png" width="800px"/>
+
+**6. Configurar Jenkins**
+
+
+<p>En el navegador insertamos nuestro dominio y puerto para configurar Jenkins, deberia ver una imagen como la siguiente..</p>
+
+<img alt="README-6bb0c395.png" src="assets/README-6bb0c395.png" width="800px"/>
+
+<p>Para mostrar la contraseña utilizaremos el siguiente comando..</p>
+
+> sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+<img alt="README-403b238f.png" src="assets/README-403b238f.png" width="800px"/>
+
+<p>Copiamos la contraseña alfanumérica de 32 caracteres de la terminal, la pegamos y luego clickeamos en Continue.</p>
+
+<img alt="README-ffd66b58.png" src="assets/README-ffd66b58.png" width="800px"/>
+
+<p>Haremos clic en la opción Install suggested plugins (Instalar los complementos sugeridos), que iniciará de inmediato el proceso de instalación.</p>
+
+<img alt="README-f958a74f.png" src="assets/README-f958a74f.png" width="800px"/>
+
+<p>Espereamos que se complete el proceso de instalación</p>
+
+<img alt="README-8d6e2c29.png" src="assets/README-8d6e2c29.png" width="800px"/>
+
+<p>En la siguiente ventana configuramos el usuario administrador</p>
+
+
+<img alt="README-70fdbd88.png" src="assets/README-70fdbd88.png" width="800px"/>
+
+
+<p>Introduciendo nuestra informacion </p>
+
+<img alt="README-0014f249.png" src="assets/README-0014f249.png" width="800px"/>
+
+<p>Confirmamos la url para instanciar Jenkis</p>
+
+<img alt="README-1aff64bf.png" src="assets/README-1aff64bf.png" width="800px"/>
+
+<p>Finalizado el proceso de congifuracion se mostrara una ventan similar a la siguiente </p>
+<img alt="README-6430e162.png" src="assets/README-6430e162.png" width="800px"/>
+
+<p>Clickeamos en *Start using Jenkins* donde nos mostrara el panel de Jenkins</p>
+
+<img alt="README-be14ed8c.png" src="assets/README-be14ed8c.png" width="800px"/>
+
 <hr/>
 
-***4.1 Dockerfile***
-<p>Posteriormente nos creamos un fichero dockerfile con el contenido siguiente</p>
-
-<img alt="README-501f14a0.png" src="assets/README-501f14a0.png" width="800px"/>
-
-<p>Explicación del fichero dockerfile</p>
-
-<img alt="README-b951611c.png" src="assets/README-b951611c.png" width="800px"/>
-<hr/>
-
-***4.2 Plugins.txt***
-
-<p>Ahora creamos un fichero llamado plugins.txt que contienen los plugins a instalar en jekins, el contenido sera el siguiente</p>
-
-<img alt="README-21560349.png" src="assets/README-21560349.png" width="800px"/>
-<hr/>
-
-***4.3 Docker-Compose.yml***
-
-<p>Nos queda por crear nuestro docker-compose.yml con el contenido siguiente</p>
-
-<img alt="README-95988536.png" src="assets/README-95988536.png" width="800px"/>
-
-<p>Explicación del fichero docker-compose.yml</p>
-
-<img alt="README-042701c7.png" src="assets/README-042701c7.png" width="800px"/>
-
-<p>Creamos una carpeta llamada jenkins y metemos los ficheros dockerfile y pulgins.txt dentro de ella</p>
-
-<p>Teniendo una estructura similar a la siguiente</p>
-<img alt="README-6f95665f.png" src="assets/README-6f95665f.png" width=""/>
-<hr/>
-
-***4.4 Construcción de la imagen***
-
-<p>Para construir la imagen ejecutamos el siguiente comando:</p>
-
-> docker-compose build
-
-<img alt="README-5b4753e0.png" src="assets/README-5b4753e0.png" width="800px"/>
-
-<p>Para arrancar el contenedor con Jenkins ejecutamos el siguiente comando:</p>
-
-> docker-compose up -d
-
-<img alt="README-1d92eea6.png" src="assets/README-1d92eea6.png" width="800px"/>
-
-<p>Arrancado jenkins accedemos a nuestro dominio para entrar en la consola jenkins</p>
-
-<p>Para obtener la contraseña del usuario admin de Jenkins ejecutamos el siguiente comando:</p>
-
-> docker exec -it dockerjenkins_master_1 cat /var/jenkins_home/secrets/initialAdminPassword
-
-<img alt="README-f1123d8f.png" src="assets/README-f1123d8f.png" width="800px"/>
-
-<p>Ahora podemos configurar jenkins en docker</p>
-
-<img alt="README-ab121647.png" src="assets/README-ab121647.png" width="800px"/>
-
-<hr/>
-
-Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/2ºTrimestre/InstalacionConfiguracionJenkinsLinuxDocker">enlace</a>
+Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/2ºTrimestre/InstalacionConfiguracionJenkinsLinux">enlace</a>
