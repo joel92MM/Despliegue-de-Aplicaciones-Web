@@ -58,7 +58,7 @@
 
 <img alt="README-46822063.png" src="assets/README-46822063.png" width="" height="" >
 
-<p>Una vez guardado, pulsamos la opcion contruir ahora</p>
+<p>Una vez guardado, pulsamos la opción construir ahora</p>
 
 <img alt="README-be58fc19.png" src="assets/README-be58fc19.png" width="" height="" >
 
@@ -71,6 +71,59 @@
 <p>Este es el error que sale por consola </p>
 
 <img alt="README-baecce51.png" src="assets/README-baecce51.png" width="" height="" >
+
+### Solución del error ###
+
+<p>Nos vamos al panel de control de jenkins, administrar jenkins</p>
+
+<img alt="README-1479f94f.png" src="assets/README-1479f94f.png" width="" height="" >
+
+<p>Nos vamos a la opción de administrar plugins</p>
+
+<img alt="README-9aa51059.png" src="assets/README-9aa51059.png" width="" height="" >
+
+<p>Nos vamos a la pestaña todos los plugins y en el cuadro de búsqueda introducimos docker, y seleccionamos las siguientes opciones</p>
+
+<img alt="README-505e1381.png" src="assets/README-505e1381.png" width="" height="" >
+
+<p>Pulsamos en descargar ahora e instalar después de reiniciar</p>
+
+<p>Nos aparecerá una ventana similar a la siguiente, seleccionamos la opción de reiniciar jenkins cuando termine la instalación..</p>
+
+<img alt="README-f964a18f.png" src="assets/README-f964a18f.png" width="" height="" >
+
+<p>Nos aparecerá la siguiente ventana</p>
+
+<img alt="README-58c5e155.png" src="assets/README-58c5e155.png" width="" height="" >
+
+<p>Volvemos a pulsar la opción de construir ahora y se nos mostrará otro error distinto</p>
+
+<img alt="README-c82c3741.png" src="assets/README-c82c3741.png" width="" height="" >
+
+<p>Se muestra una ventana similar a la siguiente, de error de permisos</p>
+
+<img alt="README-e8ebfe8f.png" src="assets/README-e8ebfe8f.png" width="" height="" >
+
+<p>Añadimos permisos de usermod, con el comando...</p>
+
+> sudo usermod -a -G docker jenkins
+
+<img alt="README-5c7fb3f6.png" src="assets/README-5c7fb3f6.png" width="" height="" >
+
+<p>Ahora nos vamos a la terminal para añadir el usuario de jenkins al grupo de sudoers</p>
+
+<img alt="README-06ad5290.png" src="assets/README-06ad5290.png" width="" height="" >
+
+<p>Reiniciamos los servicios de apache y de jenkins</p>
+
+<img alt="README-b5b3f7d7.png" src="assets/README-b5b3f7d7.png" width="" height="" >
+
+<p>Volvemos a ejecutar pipeline y vemos que se ejecuta</p>
+
+<img alt="README-8f033d96.png" src="assets/README-8f033d96.png" width="" height="" >
+
+<p>Ahora tenemos el pipeline de java instalado, hacemos el proceso con los siguientes lenguajes a instalar</p>
+
 
 ***2.2. Node.js***
 
