@@ -42,6 +42,7 @@
 <p>Se mostraran los diferentes pasos para la creación de los tipos de lenguajes</p>
 <hr/>
 
+
 ***2.1. Java***
 
 <p>Creación de Pipeline en Java</p>
@@ -128,22 +129,112 @@
 ***2.2. Node.js***
 
 <p>Creación de Pipeline en Node.js</p>
+<p>Clickeamos en nueva tarea</p>
+
+<img alt="README-cc6f4da5.png" src="assets/README-cc6f4da5.png" width="" height="" >
+
+<p>Definimos el nombre del pipeline</p>
+
+<img alt="README-e842212c.png" src="assets/README-e842212c.png" width="" height="" >
+
+<p>En la opción de pipeline, nos vamos a script y pegamos el script  de la siguiente imagen</p>
+
+<img alt="README-4ed410f8.png" src="assets/README-4ed410f8.png" width="" height="" >
+
+<p>Una vez guardado, pulsamos la opción construir ahora</p>
+
+<img alt="README-cfb0180d.png" src="assets/README-cfb0180d.png" width="" height="" >
+
+<img alt="README-8f92d222.png" src="assets/README-8f92d222.png" width="" height="" >
+
+<p>Finalmente se ha instalado el pipeline</p>
+
+<img alt="README-52882074.png" src="assets/README-52882074.png" width="" height="" >
+
 
 ***2.3. Ruby***
 
 <p>Creación de Pipeline en Ruby</p>
+<p>Clickeamos en nueva tarea</p>
+
+<img alt="README-cc6f4da5.png" src="assets/README-cc6f4da5.png" width="" height="" >
+
+<p>Definimos el nombre del pipeline</p>
+
+<img alt="README-f898b30c.png" src="assets/README-f898b30c.png" width="" height="" >
+
+
+<p>En la opción de pipeline, nos vamos a script y pegamos el script  de la siguiente imagen</p>
+
+<img alt="README-e3ad587a.png" src="assets/README-e3ad587a.png" width="" height="" >
+
+<p>Una vez guardado, pulsamos la opción construir ahora</p>
+
+<img alt="README-083e3e1c.png" src="assets/README-083e3e1c.png" width="" height="" >
+
+<img alt="README-8bf44a00.png" src="assets/README-8bf44a00.png" width="" height="" >
+
+
+<p>Finalmente se ha instalado el pipeline</p>
+
+<img alt="README-39dca1c6.png" src="assets/README-39dca1c6.png" width="" height="" >
 
 ***2.4. Python***
 
 <p>Creación de Pipeline en Python</p>
+<p>Clickeamos en nueva tarea</p>
+
+<img alt="README-cc6f4da5.png" src="assets/README-cc6f4da5.png" width="" height="" >
+
+<p>Definimos el nombre del pipeline</p>
+
+<img alt="README-34dcba6d.png" src="assets/README-34dcba6d.png" width="" height="" >
+
+<p>En la opción de pipeline, nos vamos a script y pegamos el script  de la siguiente imagen</p>
+
+<img alt="README-4f2e36eb.png" src="assets/README-4f2e36eb.png" width="" height="" >
+
+<p>Una vez guardado, pulsamos la opción construir ahora</p>
+
+<img alt="README-23787efa.png" src="assets/README-23787efa.png" width="" height="" >
+
+<img alt="README-b0bd33e5.png" src="assets/README-b0bd33e5.png" width="" height="" >
+
+<p>Finalmente se ha instalado el pipeline</p>
+
+<img alt="README-8d3ee026.png" src="assets/README-8d3ee026.png" width="" height="" >
 
 ***2.5. PHP***
 
 <p>Creación de Pipeline en PHP</p>
+<p>Clickeamos en nueva tarea</p>
+
+<img alt="README-cc6f4da5.png" src="assets/README-cc6f4da5.png" width="" height="" >
+
+<p>Definimos el nombre del pipeline</p>
+
+<p>En la opción de pipeline, nos vamos a script y pegamos el script  de la siguiente imagen</p>
+
+<p>Una vez guardado, pulsamos la opción construir ahora</p>
+
+<p>Finalmente se ha instalado el pipeline</p>
+
 
 ***2.6. GO***
 
 <p>Creación de Pipeline en GO</p>
+<p>Clickeamos en nueva tarea</p>
+
+<img alt="README-cc6f4da5.png" src="assets/README-cc6f4da5.png" width="" height="" >
+
+<p>Definimos el nombre del pipeline</p>
+
+<p>En la opción de pipeline, nos vamos a script y pegamos el script  de la siguiente imagen</p>
+
+<p>Una vez guardado, pulsamos la opción construir ahora</p>
+
+<p>Finalmente se ha instalado el pipeline</p>
+
 
 <hr/>
 
