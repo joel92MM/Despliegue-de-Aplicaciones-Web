@@ -5,6 +5,8 @@
 
 ## 1. Requisitos básicos ##
 
+## 2. Creación de ficheros en GitHub ##
+
 
 <hr/>
 
