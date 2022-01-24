@@ -21,14 +21,39 @@
 **2. Creación de ficheros en GitHub**
 
 <p>Creamos un repositorio en nuestra cuenta de github, de nombre php-helloworld.</p>
-<p>Clonamos el proyecto en local</p>
-<p>Creamos la carpeta src. Añadimos dentro un fichero index.php, , que contenga contenido en el lenguaje php y una imagen personalizada con nuestro nombre.</p>
+<p>Si no tenemos el proyecto en local, lo clonamos con el siguiente comando..</p>
+
+> git clone [url_repositorio]
+
+<p>Si lo tenemos clonado entramos en el repositorio y creamos la carpeta luego la iniciamos</p>
+
+<img alt="README-1f6e1ee9.png" src="assets/README-1f6e1ee9.png" width="" height="" >
+
+<p>Entramos dentro de la carpeta creada</p>
+
+<img alt="README-46fd5b43.png" src="assets/README-46fd5b43.png" width="" height="" >
+
+<p>Creamos la carpeta src </p>
+
+<img alt="README-d7cfd2e6.png" src="assets/README-d7cfd2e6.png" width="" height="" >
+
+<p>Añadimos dentro un fichero index.php, que contenga contenido en el lenguaje php y una imagen personalizada con nuestro nombre.</p>
+
+<img alt="README-826f946e.png" src="assets/README-826f946e.png" width="" height="" >
+<img alt="README-fbced398.png" src="assets/README-fbced398.png" width="" height="" >
+
+
+
 <p>Volvemos a la raiz de nuestro proyecto.</p>
+
+<img alt="README-a6c7daae.png" src="assets/README-a6c7daae.png" width="" height="" >
 <p>Creamos el fichero Dockerfile. Incluye el siguiente contenido</p>
 
 > FROM php:IMAGEN OFICIAL DE PHP<br/>
 > COPY src/ /var/www/html <br/>
 > EXPOSE 80
+
+<img alt="README-dd99fef5.png" src="assets/README-dd99fef5.png" width="" height="" >
 
 **3. Creación de el Pipeline**
 
@@ -45,10 +70,10 @@
 <p>Ejecutamos el Pipeline, y verificar que se ha realizado de forma correcta visualizando el navegador.</p>
 <p></p>
 <p></p>
-v
+
 <p></p>
 <p></p>
-v
+
 <p></p>
 
 
