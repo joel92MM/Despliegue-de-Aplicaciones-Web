@@ -84,14 +84,16 @@
 
 <img alt="README-1c30304f.png" src="assets/README-1c30304f.png" width="" height="" >
 
-<p>Ejecutamos el Pipeline, y verificar que se ha realizado de forma correcta visualizando el navegador.</p>
+
+<p>Se nos muestra el pipeline solo falta construirlo</p>
+
+
+<p>Ejecutamos el Pipeline</p>
+
+<p>verificamos que se ha realizado de forma correcta visualizando el navegador.</p>
 <p></p>
 <p></p>
 
-<p></p>
-<p></p>
-
-<p></p>
 
 
 <hr/>
