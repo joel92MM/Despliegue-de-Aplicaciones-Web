@@ -4,9 +4,12 @@
 # Índice #
 
 ## 1. Requisitos básicos ##
-## 2. Creacion de repositorio##
-## 3. Ficheros de configuración##
-## 4. Creación pipeline en java##
+
+## 2. Creacion de repositorio ##
+
+## 3. Ficheros de configuración ##
+
+## 4. Creación pipeline en java ##
 
 <hr/>
 
