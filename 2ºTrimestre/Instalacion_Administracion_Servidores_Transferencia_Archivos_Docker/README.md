@@ -116,6 +116,10 @@
 
 ![](assets/README-555a55eb.PNG)
 
+<p>Verificamos el funcionamiento a través de un cliente como el filezilla</p>
+
+<img alt="README-f3f800b8.png" src="assets/README-f3f800b8.png" width="800px"/>
+
 <hr/>
 
 Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/2ºTrimestre/Instalacion_Administracion_Servidores_Transferencia_Archivos_Docker">enlace</a>
