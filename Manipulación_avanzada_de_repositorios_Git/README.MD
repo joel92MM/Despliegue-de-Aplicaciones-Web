@@ -123,8 +123,8 @@
 <br/>
 <hr/>
 
-******<p>Para hacer estos ejercicios es necesario haber hecho antes los ejercicios sobre historial de 
-cambios o bien hacer un clon del repositorio remoto https://github.com/jpexposito/libro mediante la siguiente secuencia de comandos:</p>******
+****<p>Para hacer estos ejercicios es necesario haber hecho antes los ejercicios sobre historial de
+cambios o bien hacer un clon del repositorio remoto https://github.com/jpexposito/libro mediante la siguiente secuencia de comandos:</p>****
 > git clone https://github.com/jpexposito/libro.git<br/>
 > cd libro <br/>
 
@@ -133,7 +133,10 @@ cambios o bien hacer un clon del repositorio remoto https://github.com/jpexposit
 
 <hr/>
 
-*****1.1 Mostrar el historial de cambios del repositorio*****
+*****1.1 Mostrar el historial de cambios del repositorio con el siguiente comando*****
+
+
+
 
 *****1.2 Crear la carpeta capítulos y crear dentro de ella el fichero capitulo1.txt con el texto siguiente:*****
 
@@ -156,7 +159,7 @@ cambios o bien hacer un clon del repositorio remoto https://github.com/jpexposit
   > 1- Hacer cambios en el repositorio. <br/>
   > 2- Añadir los cambios a la zona de intercambio temporal. <br/>
   > 3- Hacer un commit de los cambios.<br/>
-  
+
 <img src="https://user-images.githubusercontent.com/73592097/135731329-0c11c118-4e7f-4e64-8390-4b5bdd4251db.png" alt="Creacion de fichero">
 
 
