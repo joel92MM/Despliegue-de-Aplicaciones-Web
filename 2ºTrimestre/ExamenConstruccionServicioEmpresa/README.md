@@ -4,17 +4,19 @@
 
 # Índice #
 
-## 1. Creación de dominio principal ##
+## 1. Creación del dominio principal ##
 
-## 2. Creación de subdominio sftp##
+## 2. Creación del subdominio sftp##
 
-## 3. Creación de subdominio despliegue##
+## 3. Creación del subdominio despliegue##
 
 ## 4. Verificación de SFTP en cliente subdominio despliegue##
 
-## 5. Creación de subdominio jenkins##
+## 5. Creación del subdominio jenkins##
 
-## 6. Creación de pipeline ##
+## 6. Creación del subdominio phpmyadmin ##
+
+## 7. Creación de pipeline ##
 
 
 
@@ -175,3 +177,24 @@ Comprobamos que no hay errores de sintaxis con el siguiente comando:
 > sudo apachectl configtest
 
 Crearemos el nombre de url del subdominio
+
+Redireccionamos la url de jenkins al subdominio que estamos creando
+
+Visualizamos en el navegador que entramos en jenkins correctamente
+
+**6. Creación de subdominio phpmyadmin**
+
+Crearemos el fichero de configuración para trabajar con el host virtual, el contenido es el siguiente:
+
+
+Comprobamos que no hay errores de sintaxis con el siguiente comando:
+
+> sudo apachectl configtest
+
+Crearemos el nombre de url del subdominio
+
+Visualizamos en el navegador que entramos en phpmyadmin correctamente
+
+Nos logeamos con el usuario creado en esta [tarea](https://github.com/joel92MM/Git/tree/main/2%C2%BATrimestre/ConstruccionServicioEmpresa)
+
+Vemos que hemos entrado en phpmyadmin con el usuario 
