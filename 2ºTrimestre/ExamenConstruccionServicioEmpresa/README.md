@@ -63,9 +63,6 @@ A continuación crearemos el nombre de la url que aparecerá en el navegador
 
 <img alt="README-fc6a9197.png" src="assets/README-fc6a9197.png" width="800px"/>
 
-Si introducimos una dirección errónea aparecerá esta imagen
-
-<img alt="README-f5f4b1be.png" src="assets/README-f5f4b1be.png" width="800px"/>
 
 <br/>
 <br/>
@@ -78,9 +75,17 @@ Visualización del contenido en un navegador web
 
 <img alt="README-df16e136.png" src="assets/README-df16e136.png" width="800px"/>
 
+
+
 <br/>
 <br/>
 
+Si introducimos una dirección errónea aparecerá esta imagen
+
+<img alt="README-f5f4b1be.png" src="assets/README-f5f4b1be.png" width="800px"/>
+
+<br/>
+<br/>
 
 **2. Creación de subdominio SFTP**
 
@@ -214,3 +219,23 @@ Vemos que hemos entrado en phpmyadmin con el usuario
 <img alt="README-74d48904.png" src="assets/README-74d48904.png" width="800px"/>
 
 **6. Creación de pipeline**
+
+Entramos en Jenkins mediante el subdominio anteriormente creado
+
+Creamos una tarea pipeline nueva, con el nombre que aparece en la imagen
+
+A continuación nos mostrará la ventana de configuración de la pipeline, iremos a la opcion Pipeline y en el script copiamos el contenido de la imagen
+
+
+- El comando de la linea 6 nos permitira subir el fichero index.php al subdominio sftp.joelmmsystem.com, que se verá en despliegue.joelmmsystem.com
+
+- El comando de la linea 11 nos mostrará la versión instalada en local de MYSQL
+
+- El comando de la linea 12 nos mostrará si la frase que queremos buscar con el comando grep se encuentra en la página solicitada.
+
+- El comando de la linea 13 nos mostrará si la frase que queremos buscar con el comando grep se encuentra en la página solicitada.
+
+- El comando de la linea 14 nos mostrará si la frase que queremos buscar con el comando grep se encuentra en la página solicitada.
+
+
+Consulto el error, y encuentro el error en esta [página](https://stackoverflow.com/questions/12320219/curl-how-to-pass-password-containing-a-percent-sign) al parecer es un error de contraseña
