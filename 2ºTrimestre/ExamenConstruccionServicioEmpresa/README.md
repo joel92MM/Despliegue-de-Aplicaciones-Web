@@ -6,13 +6,13 @@
 
 ## 1. Creación del dominio principal ##
 
-## 2. Creación del subdominio sftp##
+## 2. Creación del subdominio sftp ##
 
-## 3. Creación del subdominio despliegue##
+## 3. Creación del subdominio despliegue ##
 
-## 4. Verificación de SFTP en cliente subdominio despliegue##
+## 4. Verificación de SFTP en cliente subdominio despliegue ##
 
-## 5. Creación del subdominio jenkins##
+## 5. Creación del subdominio jenkins ##
 
 ## 6. Creación del subdominio phpmyadmin ##
 
