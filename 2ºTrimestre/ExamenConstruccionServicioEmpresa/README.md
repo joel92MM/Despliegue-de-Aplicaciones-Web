@@ -212,3 +212,5 @@ Nos logeamos con el usuario creado en esta [tarea](https://github.com/joel92MM/G
 Vemos que hemos entrado en phpmyadmin con el usuario
 
 <img alt="README-74d48904.png" src="assets/README-74d48904.png" width="800px"/>
+
+**6. Creación de pipeline**
