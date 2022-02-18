@@ -171,6 +171,9 @@ El el navegador mediante el subdominio www.despliegue.joelmmsystem.com veremos e
 
 Crearemos el fichero de configuración para trabajar con el host virtual, el contenido es el siguiente:
 
+Redireccionamos la url de jenkins al subdominio que estamos creando
+
+<img alt="README-02c58d5d.png" src="assets/README-02c58d5d.png" width="800px"/>
 
 Comprobamos que no hay errores de sintaxis con el siguiente comando:
 
@@ -178,14 +181,17 @@ Comprobamos que no hay errores de sintaxis con el siguiente comando:
 
 Crearemos el nombre de url del subdominio
 
-Redireccionamos la url de jenkins al subdominio que estamos creando
+<img alt="README-2f8d3ef1.png" src="assets/README-2f8d3ef1.png" width="800px"/>
 
 Visualizamos en el navegador que entramos en jenkins correctamente
+
+<img alt="README-00a34a19.png" src="assets/README-00a34a19.png" width="800px"/>
 
 **6. Creación de subdominio phpmyadmin**
 
 Crearemos el fichero de configuración para trabajar con el host virtual, el contenido es el siguiente:
 
+<img alt="README-f16c8f65.png" src="assets/README-f16c8f65.png" width="800px"/>
 
 Comprobamos que no hay errores de sintaxis con el siguiente comando:
 
@@ -193,8 +199,16 @@ Comprobamos que no hay errores de sintaxis con el siguiente comando:
 
 Crearemos el nombre de url del subdominio
 
+<img alt="README-9bf5838f.png" src="assets/README-9bf5838f.png" width="800px"/>
+
 Visualizamos en el navegador que entramos en phpmyadmin correctamente
+
+<img alt="README-68e5c1d6.png" src="assets/README-68e5c1d6.png" width="800px"/>
 
 Nos logeamos con el usuario creado en esta [tarea](https://github.com/joel92MM/Git/tree/main/2%C2%BATrimestre/ConstruccionServicioEmpresa)
 
-Vemos que hemos entrado en phpmyadmin con el usuario 
+<img alt="README-a6b85d2a.png" src="assets/README-a6b85d2a.png" width="800px"/>
+
+Vemos que hemos entrado en phpmyadmin con el usuario
+
+<img alt="README-74d48904.png" src="assets/README-74d48904.png" width="800px"/>
