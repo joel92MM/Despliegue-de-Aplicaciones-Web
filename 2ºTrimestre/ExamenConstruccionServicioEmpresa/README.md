@@ -224,10 +224,19 @@ Entramos en Jenkins mediante el subdominio anteriormente creado
 
 Creamos una tarea pipeline nueva, con el nombre que aparece en la imagen
 
-A continuación nos mostrará la ventana de configuración de la pipeline, iremos a la opcion Pipeline y en el script copiamos el contenido de la imagen
+<img alt="README-377a98ff.png" src="assets/README-377a98ff.png" width="800px"/>
 
+<br/>
+<br/>
 
-- El comando de la linea 6 nos permitira subir el fichero index.php al subdominio sftp.joelmmsystem.com, que se verá en despliegue.joelmmsystem.com
+A continuación nos mostrará la ventana de configuración de la pipeline, iremos a la opción Pipeline y en el script copiamos el contenido de la imagen
+
+<img alt="README-7e3c4887.png" src="assets/README-7e3c4887.png" width="800px"/>
+
+<br/>
+<br/>
+
+- El comando de la linea 6 nos permitirá subir el fichero index.php al subdominio sftp.joelmmsystem.com, que se verá en despliegue.joelmmsystem.com
 
 - El comando de la linea 11 nos mostrará la versión instalada en local de MYSQL
 
@@ -237,5 +246,46 @@ A continuación nos mostrará la ventana de configuración de la pipeline, iremo
 
 - El comando de la linea 14 nos mostrará si la frase que queremos buscar con el comando grep se encuentra en la página solicitada.
 
+Nos muestra la pipeline creada y configurada en el panel de control de Jenkins
 
-Consulto el error, y encuentro el error en esta [página](https://stackoverflow.com/questions/12320219/curl-how-to-pass-password-containing-a-percent-sign) al parecer es un error de contraseña
+<img alt="README-0e5be672.png" src="assets/README-0e5be672.png" width="800px"/>
+
+<br/>
+<br/>
+
+Construimos la pipeline
+
+<img alt="README-5d05f5fc.png" src="assets/README-5d05f5fc.png" width="800px"/>
+
+<br/>
+<br/>
+
+
+Nos muestra un error en la salida, vemos el error en los log
+
+<img alt="README-fbc5c9d0.png" src="assets/README-fbc5c9d0.png" width="800px"/>
+
+<br/>
+<br/>
+
+
+Consulto el error, y encuentro el error en está [página](https://stackoverflow.com/questions/12320219/curl-how-to-pass-password-containing-a-percent-sign) al parecer es un error de contraseña, arreglo ese error y vuelvo a construir la Pipeline, y se ha corregido el error, mostrándose correcta
+
+<img alt="README-97f49703.png" src="assets/README-97f49703.png" width="800px"/>
+
+<br/>
+<br/>
+
+En el panel de control de jenkins vemos la pipeline que se ha ejecutado sin errores después de varios intentos
+
+<img alt="README-21b6ca9e.png" src="assets/README-21b6ca9e.png" width="800px"/>
+
+<br/>
+<br/>
+
+Verificamos en los log que se han ejecutado bien los comandos del script
+
+<img alt="README-dcd06e34.png" src="assets/README-dcd06e34.png" width="800px"/>
+
+<br/>
+<br/>
