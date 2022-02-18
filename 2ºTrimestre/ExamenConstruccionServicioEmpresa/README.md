@@ -154,7 +154,7 @@ Ponemos la carpeta de ese usuario como home con el siguiente comando:
 
 <img alt="README-3a750adc.png" src="assets/README-3a750adc.png" width="800px"/>
 
-Luego mediante un cliente Filezilla accedemos al servidor wwww.sftp.joelmmsystem.com, el usuario y contraseña que hemos creado de sftp
+Luego mediante un cliente Filezilla accedemos al servidor www.sftp.joelmmsystem.com, el usuario y contraseña que hemos creado de sftp
 
 <img alt="README-52f0b053.png" src="assets/README-52f0b053.png" width="800px"/>
 
@@ -176,7 +176,7 @@ El el navegador mediante el subdominio www.despliegue.joelmmsystem.com veremos e
 
 Crearemos el fichero de configuración para trabajar con el host virtual, el contenido es el siguiente:
 
-Redireccionamos la url de jenkins al subdominio que estamos creando
+Redireccionamos la url de jenkins al subdominio que estamos creando, el 301 indica enlace permanente
 
 <img alt="README-02c58d5d.png" src="assets/README-02c58d5d.png" width="800px"/>
 
@@ -289,3 +289,7 @@ Verificamos en los log que se han ejecutado bien los comandos del script
 
 <br/>
 <br/>
+
+<hr/>
+
+Enlace github: <a href="https://github.com/joel92MM/Git/tree/main/2ºTrimestre/ExamenConstruccionServicioEmpresa">enlace</a>
